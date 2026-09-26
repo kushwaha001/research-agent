@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import re
 import time
 from typing import Awaitable, Callable
 
@@ -41,6 +42,9 @@ class Executor:
                 errors.append(str(e))
                 # A source that timed out twice is down, not flaky: stop burning time on it.
                 if "timed out" in str(e) and sum("timed out" in x for x in errors) >= 2:
+                    break
+                # Permanent client errors (403/404/406...) won't fix themselves on retry.
+                if re.search(r"HTTP 4(?!29)\d\d", str(e)) or "all paper sources failed" in str(e):
                     break
                 if attempt < self.max_retries:
                     delay = 0.5 * (2**attempt)

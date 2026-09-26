@@ -105,30 +105,52 @@ class Wikipedia(Tool):
 
 class Arxiv(Tool):
     name = "arxiv"
-    description = "arXiv preprint search, newest first, with abstracts."
+    description = "Research papers: arXiv preprints newest first (Semantic Scholar as backup), with abstracts."
     best_for = "scientific / ML / AI / physics / maths research, state of the art, papers"
 
     async def search(self, query: str, limit: int = 6) -> list[Document]:
-        r = await self._get(
-            "https://export.arxiv.org/api/query",
-            search_query=f"all:{query}", sortBy="submittedDate", sortOrder="descending", max_results=str(limit),
-        )
+        errors = []
+        # arXiv sometimes refuses cloud-host IPs on one hostname but not the other.
+        for host in ("https://export.arxiv.org/api/query", "https://arxiv.org/api/query"):
+            try:
+                return await self._arxiv(host, query, limit)
+            except ToolError as e:
+                errors.append(str(e))
+        try:
+            return await self._semantic_scholar(query, limit)
+        except ToolError as e:
+            errors.append(str(e))
+        raise ToolError("arxiv: all paper sources failed (" + "; ".join(errors) + ")")
+
+    async def _arxiv(self, url: str, query: str, limit: int) -> list[Document]:
+        r = await self._get(url, search_query=f"all:{query}", sortBy="submittedDate",
+                            sortOrder="descending", max_results=str(limit))
         ns = {"a": "http://www.w3.org/2005/Atom"}
         try:
             root = ET.fromstring(r.content)
         except ET.ParseError as e:
             raise ToolError("arxiv: invalid Atom response") from e
-        docs = []
-        for e in root.findall("a:entry", ns):
-            docs.append(
-                Document(
-                    title=re.sub(r"\s+", " ", e.findtext("a:title", "", ns)).strip(),
-                    url=e.findtext("a:id", "", ns),
-                    snippet=re.sub(r"\s+", " ", e.findtext("a:summary", "", ns)).strip()[:900],
-                    source=self.name,
-                    published=e.findtext("a:published", None, ns),
-                )
+        return [
+            Document(
+                title=re.sub(r"\s+", " ", e.findtext("a:title", "", ns)).strip(),
+                url=e.findtext("a:id", "", ns),
+                snippet=re.sub(r"\s+", " ", e.findtext("a:summary", "", ns)).strip()[:900],
+                source=self.name,
+                published=e.findtext("a:published", None, ns),
             )
+            for e in root.findall("a:entry", ns)
+        ]
+
+    async def _semantic_scholar(self, query: str, limit: int) -> list[Document]:
+        r = await self._get("https://api.semanticscholar.org/graph/v1/paper/search", query=query, limit=str(limit),
+                            fields="title,abstract,url,year,publicationDate,externalIds", sort="publicationDate:desc")
+        docs = []
+        for p in r.json().get("data", []):
+            arxiv_id = (p.get("externalIds") or {}).get("ArXiv")
+            docs.append(Document(title=p.get("title") or "", source=self.name,
+                                 url=f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else (p.get("url") or ""),
+                                 snippet=(p.get("abstract") or "")[:900],
+                                 published=p.get("publicationDate") or (str(p["year"]) if p.get("year") else None)))
         return docs
 
 
