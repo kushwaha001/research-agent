@@ -1,5 +1,7 @@
 # Autonomous Research Agent
 
+**Live demo:** https://research-agent-wq4a.onrender.com (free tier: the first request after idle takes ~50 s to wake)
+
 An agent that takes a research goal, **plans before acting**, **chooses its own sources**, gathers evidence **in parallel** from live public APIs, **removes duplicate and irrelevant content**, **recovers from failures**, checks its own coverage and citations, and produces a **cited report** (Markdown / PDF / JSON). It **remembers past research**, and a web UI streams every step live.
 
 ![architecture](docs/architecture.png)
@@ -65,13 +67,14 @@ agent/
   tools/          live sources, simulated tools, FaultInjector
 server.py         FastAPI + SSE        web/index.html   single-file UI
 cli.py            CLI + transcripts    tests/            pytest suite
-samples/          3 transcripts (.log), reports (.md/.pdf) and full runs (.json)
+samples/          live/ (real deployed runs) and offline/ (simulated) transcripts, reports and full runs
 docs/             architecture diagram, WRITEUP.md
 ```
 
 ## Assumptions, mock data and simulated tools
 
 - No dataset is used. All evidence comes from public APIs at run time: DuckDuckGo HTML, Google News RSS, Wikipedia, arXiv, HN Algolia and GitHub. None of them need keys.
-- The **committed sample transcripts were produced in offline mode** (simulated tools marked `[SIMULATED]`, heuristic planner) because the build environment had no internet access. They show the control flow and recovery paths exactly. To produce live transcripts, run the same three commands with a key set.
+- **Sample runs:** `samples/live/` holds three real runs from the deployed app (Gemini 2.5 Flash, live sources): a clean run, an injected **web_search outage** (retry → fallback to Wikipedia → query reformulation), and an injected **arXiv timeout** (retry succeeds). Each has a `.log` transcript, a `.md` report and the full `.json` run. `samples/offline/` holds the same scenarios in offline mode (simulated tools, labelled `[SIMULATED]`), which is what the test suite exercises.
+- Web search uses Bing RSS (with DuckDuckGo as backup) because DuckDuckGo blocks cloud-host IPs; arXiv falls back to its alternate host and then Semantic Scholar for the same reason.
 - DuckDuckGo's HTML endpoint can rate-limit or block bots. When that happens the executor falls back to Wikipedia automatically. For heavy use, swap in a keyed search API such as Tavily or Brave.
 - Relevance and near-duplicate detection are deliberately lexical (fast and explainable), not embedding-based. See the write-up.
