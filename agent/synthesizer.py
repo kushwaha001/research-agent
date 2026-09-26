@@ -9,7 +9,7 @@ from .models import Document, Finding, Plan, Report
 from .processing import tokens
 
 SYNTH_SYSTEM = """You are the synthesis module of a research agent. Write a report using ONLY the numbered
-sources provided. Every key point and finding MUST cite source ids like [3]. Never invent facts, numbers,
+sources provided. Every key point and finding MUST list its source ids in its "citations" array (do NOT write [n] markers inside "text"). Never invent facts, numbers,
 dates or sources. If the evidence is thin or conflicting, say so in "limitations".
 Return JSON only:
 {"title": str,
@@ -88,6 +88,15 @@ class Synthesizer:
         """Self-check: drop citations to non-existent sources and flag uncited claims."""
         valid = {d.id for d in docs}
         warnings = []
+        marker = re.compile(r"\s*\[(\d+(?:\s*,\s*\d+)*)\]")
+        for f in (*report.key_points, *report.findings):
+            # Move inline [n] markers the model wrote into the citations list.
+            for m in marker.findall(f.text):
+                f.citations += [int(x) for x in m.split(",") if int(x) not in f.citations]
+            f.text = marker.sub("", f.text).strip()
+        report.summary = marker.sub("", report.summary)
+        report.insights = [marker.sub("", i).strip() for i in report.insights]
+        report.limitations = [marker.sub("", i).strip() for i in report.limitations]
         for section in (report.key_points, report.findings):
             for f in section:
                 bad = [c for c in f.citations if c not in valid]
