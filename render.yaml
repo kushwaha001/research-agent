@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: research-agent
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # paste the key in the Render dashboard; never commit it

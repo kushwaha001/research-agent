@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4a5568"/></marker>
+    <marker id="w" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b7791f"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#c9ced8;stroke-width:1.4;rx:10}
+      .core{fill:#e7edfc;stroke:#2f5bd3;stroke-width:1.6}
+      .rec{fill:#fdf3e1;stroke:#b7791f;stroke-width:1.4}
+      .t{font-size:14px;font-weight:650;fill:#14171c}
+      .s{font-size:11.5px;fill:#5f6876}
+      .l{stroke:#4a5568;stroke-width:1.5;fill:none;marker-end:url(#a)}
+      .lw{stroke:#b7791f;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#w)}
+      .h{font-size:12px;font-weight:700;fill:#2f5bd3;letter-spacing:.08em}
+    </style>
+  </defs>
+  <rect width="1100" height="660" fill="#f6f7f9"/>
+  <text x="30" y="36" font-size="20" font-weight="700" fill="#14171c">Autonomous Research Agent — architecture &amp; control flow</text>
+
+  <!-- interfaces -->
+  <rect class="box" x="30" y="70" width="190" height="64" rx="10"/><text class="t" x="46" y="96">Web UI (index.html)</text><text class="s" x="46" y="116">live trace via SSE, exports</text>
+  <rect class="box" x="30" y="150" width="190" height="56" rx="10"/><text class="t" x="46" y="174">CLI (cli.py)</text><text class="s" x="46" y="193">transcripts → samples/</text>
+  <rect class="box" x="260" y="100" width="170" height="70" rx="10"/><text class="t" x="276" y="128">FastAPI server</text><text class="s" x="276" y="148">/api/run (SSE), history,</text><text class="s" x="276" y="163">report.md / report.pdf</text>
+  <path class="l" d="M220 102 H258"/><path class="l" d="M220 178 H240 V150 H258"/>
+
+  <!-- orchestrator pipeline -->
+  <text class="h" x="470" y="80">ORCHESTRATOR · agent/agent.py</text>
+  <rect class="core" x="470" y="92" width="130" height="62" rx="10"/><text class="t" x="484" y="118">1 Recall</text><text class="s" x="484" y="138">similar past runs</text>
+  <rect class="core" x="620" y="92" width="130" height="62" rx="10"/><text class="t" x="634" y="118">2 Plan</text><text class="s" x="634" y="138">LLM picks sources</text>
+  <rect class="core" x="770" y="92" width="140" height="62" rx="10"/><text class="t" x="784" y="118">3 Execute</text><text class="s" x="784" y="138">parallel waves</text>
+  <rect class="core" x="930" y="92" width="140" height="62" rx="10"/><text class="t" x="944" y="118">4 Dedupe/rank</text><text class="s" x="944" y="138">URL + shingles</text>
+  <path class="l" d="M430 135 H468"/><path class="l" d="M600 123 H618"/><path class="l" d="M750 123 H768"/><path class="l" d="M910 123 H928"/>
+
+  <rect class="core" x="930" y="200" width="140" height="62" rx="10"/><text class="t" x="944" y="226">5 Reflect</text><text class="s" x="944" y="246">coverage gaps?</text>
+  <rect class="core" x="770" y="200" width="140" height="62" rx="10"/><text class="t" x="784" y="226">6 Read pages</text><text class="s" x="784" y="246">enrich top hits</text>
+  <rect class="core" x="620" y="200" width="130" height="62" rx="10"/><text class="t" x="634" y="226">7 Synthesise</text><text class="s" x="634" y="246">cited JSON report</text>
+  <rect class="core" x="470" y="200" width="130" height="62" rx="10"/><text class="t" x="484" y="226">8 Verify+store</text><text class="s" x="484" y="246">citations, memory</text>
+  <path class="l" d="M1000 154 V198"/><path class="l" d="M928 231 H912"/><path class="l" d="M768 231 H752"/><path class="l" d="M618 231 H602"/>
+  <path class="lw" d="M1070 231 H1085 V70 H840 V90"/><text class="s" x="850" y="64" fill="#b7791f">gaps → follow-up steps (max 1 round)</text>
+  <path class="l" d="M470 231 H345 V172"/><text class="s" x="352" y="222">events + report</text>
+
+  <!-- executor detail -->
+  <text class="h" x="470" y="310">STEP 3 IN DETAIL · self-correction per tool call</text>
+  <rect class="box" x="470" y="322" width="600" height="150" rx="10"/>
+  <rect class="box" x="490" y="340" width="120" height="48" rx="8"/><path class="lw" d="M790 415 H550 V390"/><text class="t" x="504" y="362">Tool call</text><text class="s" x="504" y="379">timeout-guarded</text>
+  <rect class="box" x="640" y="340" width="120" height="48" rx="8"/><text class="t" x="654" y="362">Validate</text><text class="s" x="654" y="379">schema / non-empty</text>
+  <rect class="rec" x="790" y="330" width="260" height="30" rx="8"/><text class="s" x="802" y="350" fill="#7a5212">error / timeout → retry, exp. backoff</text>
+  <rect class="rec" x="790" y="366" width="260" height="30" rx="8"/><text class="s" x="802" y="386" fill="#7a5212">empty → LLM reformulates query</text>
+  <rect class="rec" x="790" y="402" width="260" height="30" rx="8"/><text class="s" x="802" y="422" fill="#7a5212">still failing → fallback source</text>
+  <rect class="rec" x="790" y="438" width="260" height="26" rx="8"/><text class="s" x="802" y="456" fill="#7a5212">all failed → reported as limitation</text>
+  <path class="l" d="M610 364 H638"/><path class="l" d="M760 364 H788"/>
+  
+  
+
+  <!-- tools -->
+  <text class="h" x="30" y="310">TOOLS · agent/tools (live, key-free)</text>
+  <g font-size="13">
+    <rect class="box" x="30" y="322" width="200" height="34" rx="8"/><text x="44" y="344" fill="#14171c">🌐 web_search · DuckDuckGo</text>
+    <rect class="box" x="30" y="362" width="200" height="34" rx="8"/><text x="44" y="384" fill="#14171c">📰 news · Google News RSS</text>
+    <rect class="box" x="30" y="402" width="200" height="34" rx="8"/><text x="44" y="424" fill="#14171c">📚 wikipedia · MediaWiki API</text>
+    <rect class="box" x="240" y="322" width="200" height="34" rx="8"/><text x="254" y="344" fill="#14171c">🎓 arxiv · Atom API</text>
+    <rect class="box" x="240" y="362" width="200" height="34" rx="8"/><text x="254" y="384" fill="#14171c">🟧 hackernews · Algolia</text>
+    <rect class="box" x="240" y="402" width="200" height="34" rx="8"/><text x="254" y="424" fill="#14171c">🐙 github · Search API</text>
+    <rect class="box" x="30" y="442" width="410" height="30" rx="8"/><text x="44" y="462" fill="#14171c">📄 page_reader · full-text extraction of top hits</text>
+  </g>
+  <path class="l" d="M490 364 H442"/>
+  <rect class="rec" x="30" y="490" width="410" height="44" rx="8"/><text class="s" x="44" y="509" fill="#7a5212">FaultInjector wraps any tool: timeout | outage | empty | garbage</text><text class="s" x="44" y="525" fill="#7a5212">SimulatedTool replaces all tools in OFFLINE_MODE (tests, CI, demos)</text>
+
+  <!-- llm + memory -->
+  <rect class="box" x="470" y="500" width="290" height="70" rx="10"/><text class="t" x="486" y="526">LLM client (agent/llm.py)</text><text class="s" x="486" y="546">Groq · Gemini · OpenAI · Ollama (OpenAI-compatible)</text><text class="s" x="486" y="561">used by Plan, Reflect, Synthesise · JSON self-repair</text>
+  <rect class="box" x="780" y="500" width="290" height="70" rx="10"/><text class="t" x="796" y="526">Memory (SQLite)</text><text class="s" x="796" y="546">written in step 8, read in step 1</text><text class="s" x="796" y="561">similar goals feed the planner's context</text>
+  
+  <text class="s" x="30" y="620">Everything the agent does is a TraceEvent → streamed to the UI, written to .log transcripts, and embedded in the report's "How this report was produced" section.</text>
+</svg>

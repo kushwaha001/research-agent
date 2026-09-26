@@ -1,0 +1,863 @@
+{
+  "run_id": "7f2bf0e584",
+  "goal": "Competitive landscape brief for Perplexity AI using public web data",
+  "llm": "offline (heuristic)",
+  "plan": {
+    "goal": "Competitive landscape brief for Perplexity AI using public web data",
+    "interpretation": "Research 'Competitive landscape brief for Perplexity AI using public web data' and summarise the most relevant, well-sourced points.",
+    "sub_questions": [
+      "What is the current state of competitive landscape perplexity ai using public?",
+      "What are the key recent developments in competitive landscape perplexity ai using public?",
+      "What should a practitioner do about competitive landscape perplexity ai using public?"
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "tool": "arxiv",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "the topic has an academic research dimension",
+        "depends_on": []
+      },
+      {
+        "id": 2,
+        "tool": "hackernews",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "practitioner discussion adds signal",
+        "depends_on": []
+      },
+      {
+        "id": 3,
+        "tool": "web_search",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "broad coverage",
+        "depends_on": []
+      },
+      {
+        "id": 4,
+        "tool": "wikipedia",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "background and definitions",
+        "depends_on": []
+      }
+    ],
+    "source_rationale": "Rule-based source selection from keywords in the goal."
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "tool": "arxiv",
+      "query": "competitive landscape perplexity ai using public",
+      "status": "ok",
+      "attempts": 1,
+      "docs": [
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+          "url": "https://example.org/arxiv/2131-0",
+          "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+          "source": "arxiv",
+          "published": "2026-09-20",
+          "score": 0.9,
+          "id": 2
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+          "url": "https://example.org/arxiv/2131-1",
+          "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+          "source": "arxiv",
+          "published": "2026-09-21",
+          "score": 0.9,
+          "id": 3
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+          "url": "https://example.org/arxiv/2131-2",
+          "snippet": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+          "source": "arxiv",
+          "published": "2026-09-22",
+          "score": 0.9,
+          "id": 5
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv",
+          "url": "https://example.org/arxiv/2131-3",
+          "snippet": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+          "source": "arxiv",
+          "published": "2026-09-23",
+          "score": 0.9,
+          "id": 4
+        },
+        {
+          "title": "[SIMULATED] Overview of competitive landscape perplexity ai using public",
+          "url": "https://example.org/shared/overview",
+          "snippet": "[SIMULATED] A widely syndicated overview of competitive landscape perplexity ai using public.",
+          "source": "arxiv",
+          "published": null,
+          "score": 0.9,
+          "id": 7
+        }
+      ],
+      "error": null,
+      "recovery": null,
+      "duration_ms": 150
+    },
+    {
+      "step_id": 2,
+      "tool": "hackernews",
+      "query": "competitive landscape perplexity ai using public",
+      "status": "ok",
+      "attempts": 1,
+      "docs": [
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from hackernews",
+          "url": "https://example.org/hackernews/4089-0",
+          "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+          "source": "hackernews",
+          "published": "2026-09-20",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from hackernews",
+          "url": "https://example.org/hackernews/4089-1",
+          "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+          "source": "hackernews",
+          "published": "2026-09-21",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from hackernews",
+          "url": "https://example.org/hackernews/4089-2",
+          "snippet": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+          "source": "hackernews",
+          "published": "2026-09-22",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from hackernews",
+          "url": "https://example.org/hackernews/4089-3",
+          "snippet": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+          "source": "hackernews",
+          "published": "2026-09-23",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Overview of competitive landscape perplexity ai using public",
+          "url": "https://example.org/shared/overview",
+          "snippet": "[SIMULATED] A widely syndicated overview of competitive landscape perplexity ai using public.",
+          "source": "hackernews",
+          "published": null,
+          "score": 0.9,
+          "id": 0
+        }
+      ],
+      "error": null,
+      "recovery": null,
+      "duration_ms": 150
+    },
+    {
+      "step_id": 3,
+      "tool": "web_search",
+      "query": "competitive landscape perplexity ai using public",
+      "status": "recovered",
+      "attempts": 4,
+      "docs": [
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-0",
+          "snippet": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+          "source": "wikipedia",
+          "published": "2026-09-20",
+          "score": 0.9,
+          "id": 1
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-1",
+          "snippet": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+          "source": "wikipedia",
+          "published": "2026-09-21",
+          "score": 0.9,
+          "id": 6
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-2",
+          "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+          "source": "wikipedia",
+          "published": "2026-09-22",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-3",
+          "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+          "source": "wikipedia",
+          "published": "2026-09-23",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Overview of competitive landscape perplexity ai using public",
+          "url": "https://example.org/shared/overview",
+          "snippet": "[SIMULATED] A widely syndicated overview of competitive landscape perplexity ai using public.",
+          "source": "wikipedia",
+          "published": null,
+          "score": 0.9,
+          "id": 0
+        }
+      ],
+      "error": null,
+      "recovery": "fell back to wikipedia",
+      "duration_ms": 1654
+    },
+    {
+      "step_id": 4,
+      "tool": "wikipedia",
+      "query": "competitive landscape perplexity ai using public",
+      "status": "ok",
+      "attempts": 1,
+      "docs": [
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-0",
+          "snippet": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+          "source": "wikipedia",
+          "published": "2026-09-20",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-1",
+          "snippet": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+          "source": "wikipedia",
+          "published": "2026-09-21",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-2",
+          "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+          "source": "wikipedia",
+          "published": "2026-09-22",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from wikipedia",
+          "url": "https://example.org/wikipedia/8188-3",
+          "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+          "source": "wikipedia",
+          "published": "2026-09-23",
+          "score": 0.9,
+          "id": 0
+        },
+        {
+          "title": "[SIMULATED] Overview of competitive landscape perplexity ai using public",
+          "url": "https://example.org/shared/overview",
+          "snippet": "[SIMULATED] A widely syndicated overview of competitive landscape perplexity ai using public.",
+          "source": "wikipedia",
+          "published": null,
+          "score": 0.9,
+          "id": 0
+        }
+      ],
+      "error": null,
+      "recovery": null,
+      "duration_ms": 150
+    }
+  ],
+  "report": {
+    "title": "Research brief: Competitive landscape brief for Perplexity AI using public web data",
+    "summary": "Gathered 7 distinct, relevant sources from arxiv, wikipedia. This summary was produced extractively (no LLM configured), so points are quoted from sources rather than synthesised.",
+    "key_points": [
+      {
+        "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+        "citations": [
+          1
+        ]
+      },
+      {
+        "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+        "citations": [
+          2
+        ]
+      },
+      {
+        "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+        "citations": [
+          3
+        ]
+      },
+      {
+        "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv",
+        "citations": [
+          4
+        ]
+      },
+      {
+        "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+        "citations": [
+          5
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "text": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+        "citations": [
+          1
+        ]
+      },
+      {
+        "text": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+        "citations": [
+          2
+        ]
+      },
+      {
+        "text": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+        "citations": [
+          3
+        ]
+      },
+      {
+        "text": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+        "citations": [
+          4
+        ]
+      },
+      {
+        "text": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+        "citations": [
+          5
+        ]
+      },
+      {
+        "text": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+        "citations": [
+          6
+        ]
+      }
+    ],
+    "insights": [
+      "Read the top-ranked sources first: [1], [2], [3].",
+      "Cross-check claims that appear in only one source before acting on them.",
+      "Configure an LLM key for synthesised, non-extractive insights."
+    ],
+    "limitations": [
+      "Extractive mode: no cross-source reasoning was performed."
+    ],
+    "references": [
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+        "url": "https://example.org/wikipedia/8188-0",
+        "snippet": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+        "source": "wikipedia",
+        "published": "2026-09-20",
+        "score": 0.9,
+        "id": 1
+      },
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+        "url": "https://example.org/arxiv/2131-0",
+        "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+        "source": "arxiv",
+        "published": "2026-09-20",
+        "score": 0.9,
+        "id": 2
+      },
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+        "url": "https://example.org/arxiv/2131-1",
+        "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+        "source": "arxiv",
+        "published": "2026-09-21",
+        "score": 0.9,
+        "id": 3
+      },
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv",
+        "url": "https://example.org/arxiv/2131-3",
+        "snippet": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+        "source": "arxiv",
+        "published": "2026-09-23",
+        "score": 0.9,
+        "id": 4
+      },
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+        "url": "https://example.org/arxiv/2131-2",
+        "snippet": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+        "source": "arxiv",
+        "published": "2026-09-22",
+        "score": 0.9,
+        "id": 5
+      },
+      {
+        "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+        "url": "https://example.org/wikipedia/8188-1",
+        "snippet": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+        "source": "wikipedia",
+        "published": "2026-09-21",
+        "score": 0.9,
+        "id": 6
+      }
+    ]
+  },
+  "stats": {
+    "raw": 20,
+    "url_dupes": 7,
+    "near_dupes": 6,
+    "irrelevant": 0,
+    "kept": 7,
+    "tool_calls": 7,
+    "steps": 4,
+    "recovered": 1,
+    "failed": 0,
+    "llm_calls": 0,
+    "llm_tokens": 0,
+    "citation_warnings": 0,
+    "duration_s": 1.66,
+    "sources_used": [
+      "arxiv",
+      "wikipedia"
+    ]
+  },
+  "trace": [
+    {
+      "type": "info",
+      "message": "Goal received. LLM: offline (heuristic)",
+      "data": {
+        "run_id": "7f2bf0e584",
+        "goal": "Competitive landscape brief for Perplexity AI using public web data",
+        "llm": "offline (heuristic)",
+        "offline": true,
+        "fault": {
+          "mode": "outage",
+          "tool": "web_search"
+        }
+      },
+      "ts": 1790440899.7001946
+    },
+    {
+      "type": "plan",
+      "message": "Plan: 4 steps across 4 sources",
+      "data": {
+        "goal": "Competitive landscape brief for Perplexity AI using public web data",
+        "interpretation": "Research 'Competitive landscape brief for Perplexity AI using public web data' and summarise the most relevant, well-sourced points.",
+        "sub_questions": [
+          "What is the current state of competitive landscape perplexity ai using public?",
+          "What are the key recent developments in competitive landscape perplexity ai using public?",
+          "What should a practitioner do about competitive landscape perplexity ai using public?"
+        ],
+        "steps": [
+          {
+            "id": 1,
+            "tool": "arxiv",
+            "query": "competitive landscape perplexity ai using public",
+            "rationale": "the topic has an academic research dimension",
+            "depends_on": []
+          },
+          {
+            "id": 2,
+            "tool": "hackernews",
+            "query": "competitive landscape perplexity ai using public",
+            "rationale": "practitioner discussion adds signal",
+            "depends_on": []
+          },
+          {
+            "id": 3,
+            "tool": "web_search",
+            "query": "competitive landscape perplexity ai using public",
+            "rationale": "broad coverage",
+            "depends_on": []
+          },
+          {
+            "id": 4,
+            "tool": "wikipedia",
+            "query": "competitive landscape perplexity ai using public",
+            "rationale": "background and definitions",
+            "depends_on": []
+          }
+        ],
+        "source_rationale": "Rule-based source selection from keywords in the goal."
+      },
+      "ts": 1790440899.7003794
+    },
+    {
+      "type": "info",
+      "message": "Running 4 steps in parallel",
+      "data": {
+        "steps": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "ts": 1790440899.7004943
+    },
+    {
+      "type": "step_start",
+      "message": "Step 1: arxiv('competitive landscape perplexity ai using public')",
+      "data": {
+        "id": 1,
+        "tool": "arxiv",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "the topic has an academic research dimension",
+        "depends_on": []
+      },
+      "ts": 1790440899.7005756
+    },
+    {
+      "type": "step_start",
+      "message": "Step 2: hackernews('competitive landscape perplexity ai using public')",
+      "data": {
+        "id": 2,
+        "tool": "hackernews",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "practitioner discussion adds signal",
+        "depends_on": []
+      },
+      "ts": 1790440899.7006288
+    },
+    {
+      "type": "step_start",
+      "message": "Step 3: web_search('competitive landscape perplexity ai using public')",
+      "data": {
+        "id": 3,
+        "tool": "web_search",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "broad coverage",
+        "depends_on": []
+      },
+      "ts": 1790440899.700675
+    },
+    {
+      "type": "step_start",
+      "message": "Step 4: wikipedia('competitive landscape perplexity ai using public')",
+      "data": {
+        "id": 4,
+        "tool": "wikipedia",
+        "query": "competitive landscape perplexity ai using public",
+        "rationale": "background and definitions",
+        "depends_on": []
+      },
+      "ts": 1790440899.7007225
+    },
+    {
+      "type": "recovery",
+      "message": "Step 3: web_search: [INJECTED] service unavailable (503) → retrying in 0.5s",
+      "data": {
+        "step": 3,
+        "action": "retry",
+        "attempt": 1
+      },
+      "ts": 1790440899.7008352
+    },
+    {
+      "type": "step_end",
+      "message": "Step 1 ok: 5 result(s) in 150 ms",
+      "data": {
+        "step_id": 1,
+        "tool": "arxiv",
+        "query": "competitive landscape perplexity ai using public",
+        "status": "ok",
+        "attempts": 1,
+        "error": null,
+        "recovery": null,
+        "duration_ms": 150,
+        "titles": [
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv"
+        ]
+      },
+      "ts": 1790440899.8514826
+    },
+    {
+      "type": "step_end",
+      "message": "Step 2 ok: 5 result(s) in 150 ms",
+      "data": {
+        "step_id": 2,
+        "tool": "hackernews",
+        "query": "competitive landscape perplexity ai using public",
+        "status": "ok",
+        "attempts": 1,
+        "error": null,
+        "recovery": null,
+        "duration_ms": 150,
+        "titles": [
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from hackernews",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from hackernews",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from hackernews",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from hackernews"
+        ]
+      },
+      "ts": 1790440899.8515832
+    },
+    {
+      "type": "step_end",
+      "message": "Step 4 ok: 5 result(s) in 150 ms",
+      "data": {
+        "step_id": 4,
+        "tool": "wikipedia",
+        "query": "competitive landscape perplexity ai using public",
+        "status": "ok",
+        "attempts": 1,
+        "error": null,
+        "recovery": null,
+        "duration_ms": 150,
+        "titles": [
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from wikipedia"
+        ]
+      },
+      "ts": 1790440899.8516445
+    },
+    {
+      "type": "recovery",
+      "message": "Step 3: web_search: [INJECTED] service unavailable (503) → retrying in 1.0s",
+      "data": {
+        "step": 3,
+        "action": "retry",
+        "attempt": 2
+      },
+      "ts": 1790440900.2033832
+    },
+    {
+      "type": "recovery",
+      "message": "Step 3: web_search unavailable (web_search: [INJECTED] service unavailable (503) (x3)) → falling back to wikipedia",
+      "data": {
+        "step": 3,
+        "action": "fallback",
+        "tool": "wikipedia"
+      },
+      "ts": 1790440901.2048035
+    },
+    {
+      "type": "step_end",
+      "message": "Step 3 recovered: 5 result(s) in 1654 ms",
+      "data": {
+        "step_id": 3,
+        "tool": "web_search",
+        "query": "competitive landscape perplexity ai using public",
+        "status": "recovered",
+        "attempts": 4,
+        "error": null,
+        "recovery": "fell back to wikipedia",
+        "duration_ms": 1654,
+        "titles": [
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from wikipedia",
+          "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from wikipedia"
+        ]
+      },
+      "ts": 1790440901.355613
+    },
+    {
+      "type": "info",
+      "message": "Dedup & relevance filter: kept 7 of 20 results",
+      "data": {
+        "raw": 20,
+        "url_dupes": 7,
+        "near_dupes": 6,
+        "irrelevant": 0,
+        "kept": 7
+      },
+      "ts": 1790440901.3568494
+    },
+    {
+      "type": "info",
+      "message": "Reflection: evidence covers all sub-questions",
+      "data": {},
+      "ts": 1790440901.3570867
+    },
+    {
+      "type": "info",
+      "message": "Synthesising report from 7 sources",
+      "data": {},
+      "ts": 1790440901.3571243
+    },
+    {
+      "type": "report",
+      "message": "Report ready",
+      "data": {
+        "title": "Research brief: Competitive landscape brief for Perplexity AI using public web data",
+        "summary": "Gathered 7 distinct, relevant sources from arxiv, wikipedia. This summary was produced extractively (no LLM configured), so points are quoted from sources rather than synthesised.",
+        "key_points": [
+          {
+            "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+            "citations": [
+              1
+            ]
+          },
+          {
+            "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+            "citations": [
+              2
+            ]
+          },
+          {
+            "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+            "citations": [
+              3
+            ]
+          },
+          {
+            "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv",
+            "citations": [
+              4
+            ]
+          },
+          {
+            "text": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+            "citations": [
+              5
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "text": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+            "citations": [
+              1
+            ]
+          },
+          {
+            "text": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+            "citations": [
+              2
+            ]
+          },
+          {
+            "text": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+            "citations": [
+              3
+            ]
+          },
+          {
+            "text": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+            "citations": [
+              4
+            ]
+          },
+          {
+            "text": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+            "citations": [
+              5
+            ]
+          },
+          {
+            "text": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+            "citations": [
+              6
+            ]
+          }
+        ],
+        "insights": [
+          "Read the top-ranked sources first: [1], [2], [3].",
+          "Cross-check claims that appear in only one source before acting on them.",
+          "Configure an LLM key for synthesised, non-extractive insights."
+        ],
+        "limitations": [
+          "Extractive mode: no cross-source reasoning was performed."
+        ],
+        "references": [
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from wikipedia",
+            "url": "https://example.org/wikipedia/8188-0",
+            "snippet": "[SIMULATED] Enterprises report that adopting competitive landscape perplexity ai using public cut inference cost substantially; deployment on edge devices is growing.",
+            "source": "wikipedia",
+            "published": "2026-09-20",
+            "score": 0.9,
+            "id": 1
+          },
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 1 from arxiv",
+            "url": "https://example.org/arxiv/2131-0",
+            "snippet": "[SIMULATED] A new open-source release in competitive landscape perplexity ai using public gained thousands of stars within days, signalling strong developer demand.",
+            "source": "arxiv",
+            "published": "2026-09-20",
+            "score": 0.9,
+            "id": 2
+          },
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from arxiv",
+            "url": "https://example.org/arxiv/2131-1",
+            "snippet": "[SIMULATED] Regulators and standards bodies have begun drafting guidance that touches on competitive landscape perplexity ai using public safety and transparency.",
+            "source": "arxiv",
+            "published": "2026-09-21",
+            "score": 0.9,
+            "id": 3
+          },
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 4 from arxiv",
+            "url": "https://example.org/arxiv/2131-3",
+            "snippet": "[SIMULATED] Background: competitive landscape perplexity ai using public emerged from earlier work on efficiency; its history explains current design trade-offs.",
+            "source": "arxiv",
+            "published": "2026-09-23",
+            "score": 0.9,
+            "id": 4
+          },
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 3 from arxiv",
+            "url": "https://example.org/arxiv/2131-2",
+            "snippet": "[SIMULATED] Researchers propose distillation and quantisation recipes that make competitive landscape perplexity ai using public cheaper to train and serve.",
+            "source": "arxiv",
+            "published": "2026-09-22",
+            "score": 0.9,
+            "id": 5
+          },
+          {
+            "title": "[SIMULATED] Competitive Landscape Perplexity Ai Using Public: perspective 2 from wikipedia",
+            "url": "https://example.org/wikipedia/8188-1",
+            "snippet": "[SIMULATED] Critics note that evaluation of competitive landscape perplexity ai using public is inconsistent and several claimed gains did not replicate.",
+            "source": "wikipedia",
+            "published": "2026-09-21",
+            "score": 0.9,
+            "id": 6
+          }
+        ]
+      },
+      "ts": 1790440901.357509
+    },
+    {
+      "type": "done",
+      "message": "Done in 1.66s",
+      "data": {
+        "run_id": "7f2bf0e584",
+        "stats": {
+          "raw": 20,
+          "url_dupes": 7,
+          "near_dupes": 6,
+          "irrelevant": 0,
+          "kept": 7,
+          "tool_calls": 7,
+          "steps": 4,
+          "recovered": 1,
+          "failed": 0,
+          "llm_calls": 0,
+          "llm_tokens": 0,
+          "citation_warnings": 0,
+          "duration_s": 1.66,
+          "sources_used": [
+            "arxiv",
+            "wikipedia"
+          ]
+        }
+      },
+      "ts": 1790440901.3576076
+    }
+  ]
+}
