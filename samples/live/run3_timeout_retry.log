@@ -1,0 +1,47 @@
+18:31:02 [info] Goal received. LLM: gemini:gemini-2.5-flash
+18:31:16 [plan] Plan: 4 steps across 3 sources
+    interpretation: The goal is to understand the current state-of-the-art methods and technologies used for predicting vessel trajectories using Automatic Identification System (AIS) data. This includes identifying key research, common techniques, and potentially available code or implementations.
+    ? What are the most recent research advancements in vessel trajectory prediction using AIS data?
+    ? What machine learning or deep learning models are commonly applied for this task?
+    ? Are there any prominent open-source implementations or datasets available for vessel trajectory prediction?
+    ? What are the main challenges and future directions in this field?
+    1. arxiv 'vessel trajectory prediction AIS deep learning' — To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.
+    2. arxiv 'AIS vessel movement prediction challenges' — To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.
+    3. github 'vessel trajectory prediction AIS' — To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.
+    4. web_search 'state of the art vessel trajectory prediction AIS review' — To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.
+18:31:16 [info] Running 4 steps in parallel
+18:31:16 [step_start] Step 1: arxiv('vessel trajectory prediction AIS deep learning')
+18:31:16 [step_start] Step 2: arxiv('AIS vessel movement prediction challenges')
+18:31:16 [step_start] Step 3: github('vessel trajectory prediction AIS')
+18:31:16 [step_start] Step 4: web_search('state of the art vessel trajectory prediction AIS review')
+18:31:16 [recovery] Step 1: arxiv: [INJECTED] timed out after 8.0s → retrying in 0.5s
+18:31:17 [step_end] Step 4 ok: 6 result(s) in 610 ms
+18:31:17 [step_end] Step 3 ok: 6 result(s) in 1007 ms
+18:31:17 [recovery] Step 2: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search
+18:31:18 [step_end] Step 2 recovered: 6 result(s) in 1600 ms
+18:31:18 [recovery] Step 1: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x2)) → falling back to web_search
+18:31:18 [step_end] Step 1 recovered: 6 result(s) in 1982 ms
+18:31:18 [info] Dedup & relevance filter: kept 18 of 24 results
+18:31:29 [plan] Reflection found 2 gap(s) → adding follow-up step(s)
+    interpretation: The goal is to understand the current state-of-the-art methods and technologies used for predicting vessel trajectories using Automatic Identification System (AIS) data. This includes identifying key research, common techniques, and potentially available code or implementations.
+    ? What are the most recent research advancements in vessel trajectory prediction using AIS data?
+    ? What machine learning or deep learning models are commonly applied for this task?
+    ? Are there any prominent open-source implementations or datasets available for vessel trajectory prediction?
+    ? What are the main challenges and future directions in this field?
+    1. arxiv 'vessel trajectory prediction AIS deep learning' — To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.
+    2. arxiv 'AIS vessel movement prediction challenges' — To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.
+    3. github 'vessel trajectory prediction AIS' — To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.
+    4. web_search 'state of the art vessel trajectory prediction AIS review' — To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.
+    5. arxiv 'most recent research advancements vessel trajectory prediction AIS data' — Gap: What are the most recent research advancements in vessel trajectory prediction using AIS data?
+    6. arxiv 'challenges and future directions vessel trajectory prediction AIS data' — Gap: What are the main challenges and future directions in this field?
+18:31:29 [info] Running 2 steps in parallel
+18:31:29 [step_start] Step 5: arxiv('most recent research advancements vessel trajectory prediction AIS data')
+18:31:29 [step_start] Step 6: arxiv('challenges and future directions vessel trajectory prediction AIS data')
+18:31:31 [recovery] Step 6: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search
+18:31:31 [recovery] Step 5: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search
+18:31:31 [step_end] Step 6 recovered: 6 result(s) in 1922 ms
+18:31:31 [step_end] Step 5 recovered: 6 result(s) in 1922 ms
+18:31:31 [info] Read full text of 1 top page(s) for extra depth
+18:31:31 [info] Synthesising report from 18 sources
+18:32:13 [report] Report ready
+18:32:13 [done] Done in 70.49s

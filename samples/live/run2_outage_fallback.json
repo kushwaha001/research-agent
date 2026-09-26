@@ -1,0 +1,1047 @@
+{
+ "run_id": "5a66d6b944",
+ "goal": "Given a company name, produce a short competitive-landscape brief: Perplexity AI",
+ "llm": "gemini:gemini-2.5-flash",
+ "plan": {
+  "goal": "Given a company name, produce a short competitive-landscape brief: Perplexity AI",
+  "interpretation": "The user wants a competitive landscape brief for Perplexity AI. This involves identifying its main competitors, understanding its unique selling points, and how it compares to others in the market. I will focus on its core product (AI search/answer engine) and direct competitors.",
+  "sub_questions": [
+   "Who are the main competitors of Perplexity AI in the AI search/answer engine market?",
+   "What are the key features and unique selling propositions of Perplexity AI?",
+   "What is the current market perception and recent developments regarding Perplexity AI and its competitors?"
+  ],
+  "steps": [
+   {
+    "id": 1,
+    "tool": "web_search",
+    "query": "Perplexity AI competitors",
+    "rationale": "Identify the primary direct and indirect competitors of Perplexity AI.",
+    "depends_on": []
+   },
+   {
+    "id": 2,
+    "tool": "web_search",
+    "query": "Perplexity AI unique features",
+    "rationale": "Understand Perplexity AI's core offerings and differentiators.",
+    "depends_on": []
+   },
+   {
+    "id": 3,
+    "tool": "news",
+    "query": "Perplexity AI recent developments",
+    "rationale": "Gather recent news and announcements about Perplexity AI to understand its current trajectory and market activities.",
+    "depends_on": []
+   },
+   {
+    "id": 4,
+    "tool": "news",
+    "query": "AI search engine market competition",
+    "rationale": "Look for recent news on the broader AI search market to understand the competitive dynamics and major players' moves.",
+    "depends_on": []
+   },
+   {
+    "id": 5,
+    "tool": "hackernews",
+    "query": "Perplexity AI discussion",
+    "rationale": "Gauge the tech community's sentiment and discussions around Perplexity AI and its competitive standing.",
+    "depends_on": []
+   }
+  ],
+  "source_rationale": "I will use a combination of tools to gather information. 'web_search' is essential for general competitive analysis and market positioning. 'news' will provide recent developments and announcements from Perplexity AI and its rivals. 'hackernews' can offer insights into the tech community's perception and discussions around AI search tools."
+ },
+ "steps": [
+  {
+   "step_id": 1,
+   "tool": "web_search",
+   "query": "Perplexity AI competitors",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "OpenAI",
+     "url": "https://en.wikipedia.org/wiki/OpenAI",
+     "snippet": "OpenAI is an American artificial intelligence (AI) public benefit corporation (PBC) headquartered in San Francisco, California. It develops proprietary generative AI models, particularly its generative pre-trained transformer (GPT) series of large language models. Its release of ChatGPT in November 2022 has been credited with catalyzing the AI boom; as of September 2026, ChatGPT is the fifth-most-visited website globally. OpenAI also releases the GPT Image models and Codex, an AI coding agent.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "DeepSeek",
+     "url": "https://en.wikipedia.org/wiki/DeepSeek",
+     "snippet": "Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd., doing business as DeepSeek, is a Chinese artificial intelligence (AI) company that develops open weights large language models (LLMs). Based in Hangzhou, Zhejiang, DeepSeek is owned and funded by High-Flyer, a Chinese hedge fund.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.171,
+     "id": 8
+    },
+    {
+     "title": "DeepSeek (AI)",
+     "url": "https://en.wikipedia.org/wiki/DeepSeek_(AI)",
+     "snippet": "DeepSeek is a generative artificial intelligence chatbot developed by the Chinese company DeepSeek. Released on 20 January 2025, DeepSeek-R1 surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States by 27 January. DeepSeek's success against larger and more established rivals has been described as \"upending AI\" and initiating \"a global AI space race\". DeepSeek's compliance with Chinese government censorship policies and its data collection practices have also raised concerns over privacy and information control in the model, prompting regulatory scrutiny in multiple countries.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.257,
+     "id": 6
+    },
+    {
+     "title": "Products and applications of OpenAI",
+     "url": "https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI",
+     "snippet": "OpenAI has released a variety of products and applications since its founding in 2015.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "AI build-out financing",
+     "url": "https://en.wikipedia.org/wiki/AI_build-out_financing",
+     "snippet": "To finance the build-out of AI data centres during the 2020s, an unprecedented amount of capital has been mobilised in the USA in particular amid a broad competition for global technnological supremacy in artificial intelligence. \nCitigroup forecast that $2.8 trillion of capital expenditure would be required for AI data centre infrastructure by 2030, while McKinsey estimated that almost $7 trillion would be spent globally by that time. Between January and August 2024, Microsoft, Meta, Google and Amazon collectively spent $125 billion on AI data centres. According to S&P Global, $61 billion has been spent on the data centre market as a whole in 2025, while debt issuance for data centres was $182 billion during the same year.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.171,
+     "id": 7
+    },
+    {
+     "title": "Artificial intelligence controversies",
+     "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_controversies",
+     "snippet": "A broad range of public, academic, and political debates regarding the societal effects of artificial intelligence (AI) have intensified particularly in the late 2010s and 2020s, coinciding with an accelerated period of development known as the AI boom. While advocates emphasize the technology's potential to solve complex problems and enhance human quality of life, detractors highlight a wide array of dangers and challenges. These include concerns over ethics, plagiarism and theft, fraud, safety and alignment, environmental impacts, technological unemployment, and the spread of misinformation. It also covers severe future or theoretical challenges, such as the emergence of artificial superintelligence and existential risks.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.086,
+     "id": 0
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to wikipedia",
+   "duration_ms": 2148
+  },
+  {
+   "step_id": 2,
+   "tool": "web_search",
+   "query": "Perplexity AI unique features",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "Perplexity AI",
+     "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+     "snippet": "Perplexity AI, Inc., or simply Perplexity, is an American privately held software company offering a web search engine that processes user queries and synthesizes responses. Perplexity products use large language models and include web search capabilities which provide responses based on current Internet content, citing sources used. A free public version is available, while a paid Pro subscription offers access to more advanced language models and additional features.\nPerplexity AI, Inc., was founded in 22 August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.429,
+     "id": 1
+    },
+    {
+     "title": "Large language model",
+     "url": "https://en.wikipedia.org/wiki/Large_language_model",
+     "snippet": "A large language model (LLM) is an AI model (typically a neural network) trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.\nLLMs are typically based on transformer architecture.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "SoftBank Group",
+     "url": "https://en.wikipedia.org/wiki/SoftBank_Group",
+     "snippet": "SoftBank Group Corp. (ソフトバンクグループ株式会社, SofutoBanku Gurūpu Kabushiki gaisha) is a Japanese multinational investment holding company headquartered in Minato, Tokyo, that focuses on investment management. The group primarily invests in companies operating in technology that offer goods and services to customers in a multitude of markets and industries ranging from the internet to automation. With over $100 billion in capital at its onset, SoftBank's Vision Fund is the world's largest technology-focused venture capital fund.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "Google Chrome",
+     "url": "https://en.wikipedia.org/wiki/Google_Chrome",
+     "snippet": "Google Chrome is a cross-platform web browser developed by Google. It was launched in September 2008 for Microsoft Windows and was built with free software components from Apple WebKit and Mozilla Firefox. Versions for Linux, macOS, iOS, iPadOS, and Android were later released, becoming the default browser on Android devices. The browser is also the main component of ChromeOS, on which it serves as the platform for web applications.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "TikTok",
+     "url": "https://en.wikipedia.org/wiki/TikTok",
+     "snippet": "TikTok is a Chinese social networking service and short-form online video platform. It hosts user-submitted videos, which range in duration from three seconds to 60 minutes. It can be accessed through a mobile app or through its website.\nSince its launch, TikTok has become one of the world's most popular social media platforms, using recommendation algorithms to connect content creators and influencers with new audiences.",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Cloudflare",
+     "url": "https://en.wikipedia.org/wiki/Cloudflare",
+     "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet services, including content delivery network (CDN) services, cloud cybersecurity, DDoS mitigation, and ICANN-accredited domain registration. The company's services act primarily as a reverse proxy between website visitors and a customer's hosting provider, improving performance and protecting against malicious traffic.\nCloudflare was founded in 2009 by Matthew Prince, Lee Holloway, and Michelle Zatlyn. The company went public on the New York Stock Exchange in 2019 under the ticker symbol NET. Cloudflare has since expanded its offerings to include edge computing through its Workers platform, a public DNS resolver (1.1.1.1), and a VPN-like service known as WARP. In recent years, the company has integrated artificial intelligence into its infrastructure, acquirin",
+     "source": "wikipedia",
+     "published": null,
+     "score": 0.086,
+     "id": 0
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to wikipedia",
+   "duration_ms": 2198
+  },
+  {
+   "step_id": 3,
+   "tool": "news",
+   "query": "Perplexity AI recent developments",
+   "status": "ok",
+   "attempts": 1,
+   "docs": [
+    {
+     "title": "How an 'AI freeze' could make big AI companies bigger and hurt smaller firms - NPR",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdTBpWk5jcXBuUFItMkdtMzFEMEZLaE1nVGlWMUp5dHZtNUxSMFl0WW9Zb09haU5YdjBrTHFweFBYZHI0S1luVXZmeUVBTU5NbnI3Mk5jcU9FeWlTeXBHWTg1THZjVUV3NDl0R3VBcXB1R3RUV01PdHlOYm9TX2JhQUo4V0NWaHM?oc=5",
+     "snippet": "How an 'AI freeze' could make big AI companies bigger and hurt smaller firms NPR (NPR)",
+     "source": "news",
+     "published": "Wed, 23 Sep 2026 09:00:00 GMT",
+     "score": 0.171,
+     "id": 13
+    },
+    {
+     "title": "Swiss startup accuses Perplexity AI of stealing passive listening tech - courthousenews.com",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjBzM2E2Z3NNbU5pZFU1UHFlNWZQY2RqLVVEY0FBazlqSmI2ZmdoekJoMUxnNEhySW54TmFDRWNkZ0Y4ODdTRzdlVDlIdkFJeUk3SHhHY0hxTHBMYWVrUnJDSTRaV1JwOUdMMnc1a1g2YWRQdm9iTG1zQTVNanUza2M1cGd0a3BmenFxMWNWX21ZMWpQYjUtNUl4Tmg3aEIxaWVz?oc=5",
+     "snippet": "Swiss startup accuses Perplexity AI of stealing passive listening tech courthousenews.com (courthousenews.com)",
+     "source": "news",
+     "published": "Fri, 25 Sep 2026 20:39:52 GMT",
+     "score": 0.343,
+     "id": 2
+    },
+    {
+     "title": "UPDATE: Perplexity’s AI poses ‘unacceptable risk’ to children’s safety, report finds - EdSource",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNVY4MnFLcjZ3T2R5LVNvTW56R0RXamlWZTB6TEY0b0VfcURmUk1qeTJLYjFXZF9xSWQwbG0ySkdTX1dlQm5NM0I3a0pPSnFwNFk3U0NZb0VpNEFDMDVhMlBtdVY2cEpIMHU3N09GWUtNSkdISGMxQjNoY0NrUmpXUndiZV9DMHlHTGZWMW1Tb1VRejl1X3F5NTN5aEJUTTB4aXc?oc=5",
+     "snippet": "UPDATE: Perplexity’s AI poses ‘unacceptable risk’ to children’s safety, report finds EdSource (EdSource)",
+     "source": "news",
+     "published": "Fri, 18 Sep 2026 18:34:17 GMT",
+     "score": 0.343,
+     "id": 3
+    },
+    {
+     "title": "Who’s suing AI and who’s signing latest: OpenAI signs first India deals - Press Gazette",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbmlBOGF2YlY3cWZ0dXBrNWU2WV8yMGtJVjFCRUx2eUs3b0NNTzBsenpyOEloaVppUlpMOGxOMWtRX3BJYkcxbV9mZ1d5VzZLMmMzM1RNcXUycnRRTGpKV21FT3dJVkpuYTdQeEdJbzgwdUpJcV9kMEVwbkN3VDZKUVV1RlNEVVI5ZGN4eA?oc=5",
+     "snippet": "Who’s suing AI and who’s signing latest: OpenAI signs first India deals Press Gazette (Press Gazette)",
+     "source": "news",
+     "published": "Wed, 23 Sep 2026 07:00:00 GMT",
+     "score": 0.171,
+     "id": 10
+    },
+    {
+     "title": "Crusoe and Perplexity Announce Multi-Year AI Partnership - Crusoe",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKc3pFNk8zWVZKQXVNdEJuSnhULVYzcGR3bFFHUHBhbFFBREFDUlI0Q2lZckp3SzRqaWhkRTdMRksybndONHZ5MFVlWmxtc0Etd21yOHJRWHlQZ0c2MzJLcl9LNl9ZWVV3RUF0TlBnMVZod0ttR0E2TXl3?oc=5",
+     "snippet": "Crusoe and Perplexity Announce Multi-Year AI Partnership Crusoe (Crusoe)",
+     "source": "news",
+     "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+     "score": 0.343,
+     "id": 5
+    },
+    {
+     "title": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? - Memeburn",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBiYUVBT3VpVXdXSXhmc0xUNC1ZVzRhTkNwQy1ldklqamw5SjdKSUJFX0xUbTQ2cHJMcEluSHljcnljSHp6YUhnNlhJRTB1SEM2YVZ5aQ?oc=5",
+     "snippet": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? Memeburn (Memeburn)",
+     "source": "news",
+     "published": "Sat, 26 Sep 2026 16:45:49 GMT",
+     "score": 0.343,
+     "id": 4
+    }
+   ],
+   "error": null,
+   "recovery": null,
+   "duration_ms": 906
+  },
+  {
+   "step_id": 4,
+   "tool": "news",
+   "query": "AI search engine market competition",
+   "status": "ok",
+   "attempts": 1,
+   "docs": [
+    {
+     "title": "McKinsey Technology Trends Outlook 2026 - McKinsey & Company",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS0wzb1RmNmZPeVB4QjdSZTVmcmxMVUwyT2pSYVliQVQwZ25mUFpoWlFXdGFpWnNJLVdmMncwc0twU2pxSmplU2k0WGFuRWlIT1BFQ1FzWVlCbWc2MWpzamF0LU51NVBSNURBeWhUN0VxYlA1VjMzUk16eHlBQlJ2R3F2TXAzaW9SczJId2hn?oc=5",
+     "snippet": "McKinsey Technology Trends Outlook 2026 McKinsey & Company (McKinsey & Company)",
+     "source": "news",
+     "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+     "score": 0.171,
+     "id": 14
+    },
+    {
+     "title": "Generative engine optimization (GEO): How to win AI mentions - Search Engine Land",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNzVfRGlQSnVUV1N3cVc2Y1ZrOHkyWDhzT3RvdFlMSWxwbGg3S0dBX2ZvamVQb1NQZmFkei0wREJrUFV5OTNLWHhHaW5ZOU9VX1lobHhFbUJjOFRpQ1BvQTlxUUo2bUdGU3VkQlJpVVlWU09fR1RUbkppdkVnZVVUaUpITm0?oc=5",
+     "snippet": "Generative engine optimization (GEO): How to win AI mentions Search Engine Land (Search Engine Land)",
+     "source": "news",
+     "published": "Thu, 24 Sep 2026 16:02:00 GMT",
+     "score": 0.171,
+     "id": 11
+    },
+    {
+     "title": "CMA: Google Should Make It Easier To Choose Other Search Engine On Android & Chrome - Search Engine Roundtable",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1ldWljSk5mR3N5N3FZUUdJODNUQjlRd1lla29aNTdXMjQ5S2J1YWFaaDBaVkZ2RTJfQlo1eHJ3Rkk3LVIxQXFiaVlETTJxZElzSk9BbG1nQjVvOHV3Q2tNRG1NOXRhekdNUDNwaVNaak5abHMxVEw1OGJvX2k?oc=5",
+     "snippet": "CMA: Google Should Make It Easier To Choose Other Search Engine On Android & Chrome Search Engine Roundtable (Search Engine Roundtable)",
+     "source": "news",
+     "published": "Wed, 23 Sep 2026 11:55:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Eurobites: CMA tweaks search-screen proposals for age of AI - lightreading.com",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMjdLcFl3YTZyYmtleC1rSGJQWElUbTlpLU5CcXczQk9UQ0tzYXRBTFBhb2szVFdZYWJZeUx2ODcyWWdfWE5pdFVKQUNNQk95MHpfRkVyT1d6aTl3RGllNVdFQmo0bGx2LXp5NWRYN2pmYVdHNm9mNXZrb3JDbzNwUXh4MjlqZG5iLVdSNWJZVVR6R1pmREJTcjgzOWdlQkNVZzhxN1JFengwb1E?oc=5",
+     "snippet": "Eurobites: CMA tweaks search-screen proposals for age of AI lightreading.com (lightreading.com)",
+     "source": "news",
+     "published": "Wed, 23 Sep 2026 11:30:43 GMT",
+     "score": 0.171,
+     "id": 12
+    },
+    {
+     "title": "UK competition watchdog wants to give Android and Chrome users more search engine choices - Engadget",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONDRFLWdTQnB5Qm5sdFBwZF9nSGxzU3hvSE9RQUlJRi1TRnVPSDRXc2hOUjhrek9QRXJEU0F3alB3dUlGMlM1aTcxWWJHX0VQUFZNM1A4R3NYLVAwNjdLWFVwUFl4VlVhRFYzdUZ1MEE2clhKU0dNakhQbk8yT1VrSko3aEJlX1RDYXdoRzdsbDZ6eW83TzA5Sko2SzY1OXNTWmpfRm5PQms1NEZrRWNJRzhRd2R5a1ppY205NVhvdHU?oc=5",
+     "snippet": "UK competition watchdog wants to give Android and Chrome users more search engine choices Engadget (Engadget)",
+     "source": "news",
+     "published": "Wed, 23 Sep 2026 11:21:42 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "InnovAit AI Explores the Psychology of Zero-Click AI Procurement - thecommunityvoice.com",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2V1OHFiazlQM3VCbDVuX1FwLWVpWXQ2X3FOamVJR3lqbzlaQlFpNmd3NWFSMHp0YVRFY0Zoc1VaVUJUT1RzYmIyN2RPbnJEcFQ1WXB5NE9tYjlra19GbGZpdWloczU0QUpCVVQ0U3gtR090WWg5a2xYZUNpM3dPZWt3RU44VEFTQ0w4UV9QVXRodC1Zd1c3NG9wanEzbjhOV0t3eV9HY3d0MG9qeTcxd2VBdFdaWFp5RUotTmR6dGIzcV8yV1ZmQXlNSGNVRnlqUjFOSXA1M1EyZE9wdTVuM3YyUi1jLTZ3YmdKS0hPcHFsV2N2Z19YUmtUTzdlRTRJMXJJVWhSR3dBUVU?oc=5",
+     "snippet": "InnovAit AI Explores the Psychology of Zero-Click AI Procurement thecommunityvoice.com (thecommunityvoice.com)",
+     "source": "news",
+     "published": "Thu, 24 Sep 2026 17:05:00 GMT",
+     "score": 0.171,
+     "id": 9
+    }
+   ],
+   "error": null,
+   "recovery": null,
+   "duration_ms": 1105
+  },
+  {
+   "step_id": 5,
+   "tool": "hackernews",
+   "query": "Perplexity AI discussion",
+   "status": "failed",
+   "attempts": 2,
+   "docs": [],
+   "error": "no results even after reformulation; fallback web_search also failed: web_search: [INJECTED] service unavailable (503) (x3)",
+   "recovery": null,
+   "duration_ms": 14209
+  }
+ ],
+ "report": {
+  "title": "Perplexity AI Competitive Landscape Brief",
+  "summary": "Perplexity AI is a privately held American software company offering an AI-powered web search engine that synthesizes responses from current internet content and cites its sources. Founded in August 2022, it provides both a free public version and a paid Pro subscription with advanced features. The company faces competition from other AI tools like Claude and DeepSeek, and operates within a rapidly evolving and highly capitalized AI market.",
+  "key_points": [
+   {
+    "text": "Perplexity AI is an American software company that provides a web search engine utilizing large language models to process user queries, synthesize responses from current internet content, and cite sources.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "The company offers a free public version of its product, with a paid Pro subscription providing access to more advanced language models and additional features.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "Perplexity AI was founded on August 22, 2022, by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "The AI market is characterized by significant capital expenditure, with forecasts of trillions of dollars required for AI data center infrastructure by 2030, indicating intense competition and investment.",
+    "citations": [
+     7
+    ]
+   },
+   {
+    "text": "Perplexity AI has recently entered a multi-year AI partnership with Crusoe.",
+    "citations": [
+     5
+    ]
+   }
+  ],
+  "findings": [
+   {
+    "text": "Perplexity AI's core product is a web search engine that uses large language models to synthesize responses based on current internet content, providing citations for the sources used.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "A free version of Perplexity AI is available, while a Pro subscription offers advanced language models and additional features.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "Perplexity AI was founded on August 22, 2022.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "DeepSeek, a Chinese AI company, developed a generative AI chatbot called DeepSeek-R1, which surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States by January 27, 2025.",
+    "citations": [
+     6
+    ]
+   },
+   {
+    "text": "DeepSeek is owned and funded by High-Flyer, a Chinese hedge fund, and develops open weights large language models.",
+    "citations": [
+     8
+    ]
+   },
+   {
+    "text": "There are ongoing discussions and comparisons between AI tools like Claude and Perplexity regarding their utility in 2026.",
+    "citations": [
+     4
+    ]
+   },
+   {
+    "text": "Citigroup forecasts $2.8 trillion in capital expenditure for AI data center infrastructure by 2030, while McKinsey estimates almost $7 trillion will be spent globally by that time.",
+    "citations": [
+     7
+    ]
+   }
+  ],
+  "insights": [
+   "Perplexity AI should continue to emphasize its source-citing capability as a key differentiator in the AI search market, especially given concerns about information control and privacy with other AI models.",
+   "Given the intense competition and significant capital investment in the AI sector, Perplexity AI should explore further strategic partnerships to enhance its technological capabilities and market reach.",
+   "Perplexity AI should monitor regulatory developments and public perception closely, particularly regarding issues like children's safety and data collection, to proactively address potential concerns and maintain user trust.",
+   "To compete effectively against rapidly growing rivals like DeepSeek, Perplexity AI should continuously innovate its language models and feature set, potentially leveraging its Pro subscription model for advanced user segments.",
+   "Perplexity AI should consider expanding its global market presence, learning from the rapid international success of competitors like DeepSeek in challenging established players."
+  ],
+  "limitations": [
+   "The provided sources mention a lawsuit against Perplexity AI by a Swiss startup regarding 'passive listening tech' and a report raising concerns about 'unacceptable risk' to children's safety, but lack details on the specifics or outcomes of these allegations.",
+   "While Claude is mentioned as a competitor, the sources do not provide detailed information about its features, market share, or specific competitive advantages relative to Perplexity AI.",
+   "The competitive landscape information is somewhat fragmented, with some sources focusing on specific competitors (DeepSeek, Claude) and others on broader market trends (AI build-out financing), making a comprehensive direct comparison challenging.",
+   "Information regarding Perplexity AI's current market share, user base growth, or specific financial performance is not available in the provided sources.",
+   "Some sources could not be reached: hackernews (step 5)."
+  ],
+  "references": [
+   {
+    "title": "Perplexity AI",
+    "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+    "snippet": "Perplexity AI, Inc., or simply Perplexity, is an American privately held software company offering a web search engine that processes user queries and synthesizes responses. Perplexity products use large language models and include web search capabilities which provide responses based on current Internet content, citing sources used. A free public version is available, while a paid Pro subscription offers access to more advanced language models and additional features.\nPerplexity AI, Inc., was founded in 22 August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski.",
+    "source": "wikipedia",
+    "published": null,
+    "score": 0.429,
+    "id": 1
+   },
+   {
+    "title": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? - Memeburn",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBiYUVBT3VpVXdXSXhmc0xUNC1ZVzRhTkNwQy1ldklqamw5SjdKSUJFX0xUbTQ2cHJMcEluSHljcnljSHp6YUhnNlhJRTB1SEM2YVZ5aQ?oc=5",
+    "snippet": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? Memeburn (Memeburn)",
+    "source": "news",
+    "published": "Sat, 26 Sep 2026 16:45:49 GMT",
+    "score": 0.343,
+    "id": 4
+   },
+   {
+    "title": "Crusoe and Perplexity Announce Multi-Year AI Partnership - Crusoe",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKc3pFNk8zWVZKQXVNdEJuSnhULVYzcGR3bFFHUHBhbFFBREFDUlI0Q2lZckp3SzRqaWhkRTdMRksybndONHZ5MFVlWmxtc0Etd21yOHJRWHlQZ0c2MzJLcl9LNl9ZWVV3RUF0TlBnMVZod0ttR0E2TXl3?oc=5",
+    "snippet": "Crusoe and Perplexity Announce Multi-Year AI Partnership Crusoe (Crusoe)",
+    "source": "news",
+    "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+    "score": 0.343,
+    "id": 5
+   },
+   {
+    "title": "DeepSeek (AI)",
+    "url": "https://en.wikipedia.org/wiki/DeepSeek_(AI)",
+    "snippet": "DeepSeek is a generative artificial intelligence chatbot developed by the Chinese company DeepSeek. Released on 20 January 2025, DeepSeek-R1 surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States by 27 January. DeepSeek's success against larger and more established rivals has been described as \"upending AI\" and initiating \"a global AI space race\". DeepSeek's compliance with Chinese government censorship policies and its data collection practices have also raised concerns over privacy and information control in the model, prompting regulatory scrutiny in multiple countries.",
+    "source": "wikipedia",
+    "published": null,
+    "score": 0.257,
+    "id": 6
+   },
+   {
+    "title": "AI build-out financing",
+    "url": "https://en.wikipedia.org/wiki/AI_build-out_financing",
+    "snippet": "To finance the build-out of AI data centres during the 2020s, an unprecedented amount of capital has been mobilised in the USA in particular amid a broad competition for global technnological supremacy in artificial intelligence. \nCitigroup forecast that $2.8 trillion of capital expenditure would be required for AI data centre infrastructure by 2030, while McKinsey estimated that almost $7 trillion would be spent globally by that time. Between January and August 2024, Microsoft, Meta, Google and Amazon collectively spent $125 billion on AI data centres. According to S&P Global, $61 billion has been spent on the data centre market as a whole in 2025, while debt issuance for data centres was $182 billion during the same year.",
+    "source": "wikipedia",
+    "published": null,
+    "score": 0.171,
+    "id": 7
+   },
+   {
+    "title": "DeepSeek",
+    "url": "https://en.wikipedia.org/wiki/DeepSeek",
+    "snippet": "Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd., doing business as DeepSeek, is a Chinese artificial intelligence (AI) company that develops open weights large language models (LLMs). Based in Hangzhou, Zhejiang, DeepSeek is owned and funded by High-Flyer, a Chinese hedge fund.",
+    "source": "wikipedia",
+    "published": null,
+    "score": 0.171,
+    "id": 8
+   }
+  ]
+ },
+ "stats": {
+  "raw": 24,
+  "url_dupes": 0,
+  "near_dupes": 0,
+  "irrelevant": 10,
+  "kept": 14,
+  "tool_calls": 15,
+  "steps": 5,
+  "recovered": 2,
+  "failed": 1,
+  "llm_calls": 3,
+  "llm_tokens": 3779,
+  "citation_warnings": 0,
+  "duration_s": 97.68,
+  "sources_used": [
+   "news",
+   "wikipedia"
+  ]
+ },
+ "trace": [
+  {
+   "type": "info",
+   "message": "Goal received. LLM: gemini:gemini-2.5-flash",
+   "data": {
+    "run_id": "5a66d6b944",
+    "goal": "Given a company name, produce a short competitive-landscape brief: Perplexity AI",
+    "llm": "gemini:gemini-2.5-flash",
+    "offline": false,
+    "fault": {
+     "mode": "outage",
+     "tool": "web_search"
+    }
+   },
+   "ts": 1790447463.2624528
+  },
+  {
+   "type": "plan",
+   "message": "Plan: 5 steps across 3 sources",
+   "data": {
+    "goal": "Given a company name, produce a short competitive-landscape brief: Perplexity AI",
+    "interpretation": "The user wants a competitive landscape brief for Perplexity AI. This involves identifying its main competitors, understanding its unique selling points, and how it compares to others in the market. I will focus on its core product (AI search/answer engine) and direct competitors.",
+    "sub_questions": [
+     "Who are the main competitors of Perplexity AI in the AI search/answer engine market?",
+     "What are the key features and unique selling propositions of Perplexity AI?",
+     "What is the current market perception and recent developments regarding Perplexity AI and its competitors?"
+    ],
+    "steps": [
+     {
+      "id": 1,
+      "tool": "web_search",
+      "query": "Perplexity AI competitors",
+      "rationale": "Identify the primary direct and indirect competitors of Perplexity AI.",
+      "depends_on": []
+     },
+     {
+      "id": 2,
+      "tool": "web_search",
+      "query": "Perplexity AI unique features",
+      "rationale": "Understand Perplexity AI's core offerings and differentiators.",
+      "depends_on": []
+     },
+     {
+      "id": 3,
+      "tool": "news",
+      "query": "Perplexity AI recent developments",
+      "rationale": "Gather recent news and announcements about Perplexity AI to understand its current trajectory and market activities.",
+      "depends_on": []
+     },
+     {
+      "id": 4,
+      "tool": "news",
+      "query": "AI search engine market competition",
+      "rationale": "Look for recent news on the broader AI search market to understand the competitive dynamics and major players' moves.",
+      "depends_on": []
+     },
+     {
+      "id": 5,
+      "tool": "hackernews",
+      "query": "Perplexity AI discussion",
+      "rationale": "Gauge the tech community's sentiment and discussions around Perplexity AI and its competitive standing.",
+      "depends_on": []
+     }
+    ],
+    "source_rationale": "I will use a combination of tools to gather information. 'web_search' is essential for general competitive analysis and market positioning. 'news' will provide recent developments and announcements from Perplexity AI and its rivals. 'hackernews' can offer insights into the tech community's perception and discussions around AI search tools."
+   },
+   "ts": 1790447476.794299
+  },
+  {
+   "type": "info",
+   "message": "Running 5 steps in parallel",
+   "data": {
+    "steps": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "ts": 1790447476.7943275
+  },
+  {
+   "type": "step_start",
+   "message": "Step 1: web_search('Perplexity AI competitors')",
+   "data": {
+    "id": 1,
+    "tool": "web_search",
+    "query": "Perplexity AI competitors",
+    "rationale": "Identify the primary direct and indirect competitors of Perplexity AI.",
+    "depends_on": []
+   },
+   "ts": 1790447476.7947307
+  },
+  {
+   "type": "step_start",
+   "message": "Step 2: web_search('Perplexity AI unique features')",
+   "data": {
+    "id": 2,
+    "tool": "web_search",
+    "query": "Perplexity AI unique features",
+    "rationale": "Understand Perplexity AI's core offerings and differentiators.",
+    "depends_on": []
+   },
+   "ts": 1790447476.7947683
+  },
+  {
+   "type": "step_start",
+   "message": "Step 3: news('Perplexity AI recent developments')",
+   "data": {
+    "id": 3,
+    "tool": "news",
+    "query": "Perplexity AI recent developments",
+    "rationale": "Gather recent news and announcements about Perplexity AI to understand its current trajectory and market activities.",
+    "depends_on": []
+   },
+   "ts": 1790447476.7947865
+  },
+  {
+   "type": "step_start",
+   "message": "Step 4: news('AI search engine market competition')",
+   "data": {
+    "id": 4,
+    "tool": "news",
+    "query": "AI search engine market competition",
+    "rationale": "Look for recent news on the broader AI search market to understand the competitive dynamics and major players' moves.",
+    "depends_on": []
+   },
+   "ts": 1790447476.7948031
+  },
+  {
+   "type": "step_start",
+   "message": "Step 5: hackernews('Perplexity AI discussion')",
+   "data": {
+    "id": 5,
+    "tool": "hackernews",
+    "query": "Perplexity AI discussion",
+    "rationale": "Gauge the tech community's sentiment and discussions around Perplexity AI and its competitive standing.",
+    "depends_on": []
+   },
+   "ts": 1790447476.7948172
+  },
+  {
+   "type": "recovery",
+   "message": "Step 1: web_search: [INJECTED] service unavailable (503) → retrying in 0.5s",
+   "data": {
+    "step": 1,
+    "action": "retry",
+    "attempt": 1
+   },
+   "ts": 1790447476.9928744
+  },
+  {
+   "type": "recovery",
+   "message": "Step 2: web_search: [INJECTED] service unavailable (503) → retrying in 0.5s",
+   "data": {
+    "step": 2,
+    "action": "retry",
+    "attempt": 1
+   },
+   "ts": 1790447476.9929013
+  },
+  {
+   "type": "recovery",
+   "message": "Step 1: web_search: [INJECTED] service unavailable (503) → retrying in 1.0s",
+   "data": {
+    "step": 1,
+    "action": "retry",
+    "attempt": 2
+   },
+   "ts": 1790447477.499516
+  },
+  {
+   "type": "recovery",
+   "message": "Step 2: web_search: [INJECTED] service unavailable (503) → retrying in 1.0s",
+   "data": {
+    "step": 2,
+    "action": "retry",
+    "attempt": 2
+   },
+   "ts": 1790447477.4995382
+  },
+  {
+   "type": "step_end",
+   "message": "Step 3 ok: 6 result(s) in 906 ms",
+   "data": {
+    "step_id": 3,
+    "tool": "news",
+    "query": "Perplexity AI recent developments",
+    "status": "ok",
+    "attempts": 1,
+    "error": null,
+    "recovery": null,
+    "duration_ms": 906,
+    "titles": [
+     "How an 'AI freeze' could make big AI companies bigger and hurt smaller firms - NPR",
+     "Swiss startup accuses Perplexity AI of stealing passive listening tech - courthousenews.com",
+     "UPDATE: Perplexity’s AI poses ‘unacceptable risk’ to children’s safety, report finds - EdSource",
+     "Who’s suing AI and who’s signing latest: OpenAI signs first India deals - Press Gazette"
+    ]
+   },
+   "ts": 1790447477.701382
+  },
+  {
+   "type": "step_end",
+   "message": "Step 4 ok: 6 result(s) in 1105 ms",
+   "data": {
+    "step_id": 4,
+    "tool": "news",
+    "query": "AI search engine market competition",
+    "status": "ok",
+    "attempts": 1,
+    "error": null,
+    "recovery": null,
+    "duration_ms": 1105,
+    "titles": [
+     "McKinsey Technology Trends Outlook 2026 - McKinsey & Company",
+     "Generative engine optimization (GEO): How to win AI mentions - Search Engine Land",
+     "CMA: Google Should Make It Easier To Choose Other Search Engine On Android & Chrome - Search Engine Roundtable",
+     "Eurobites: CMA tweaks search-screen proposals for age of AI - lightreading.com"
+    ]
+   },
+   "ts": 1790447477.9006412
+  },
+  {
+   "type": "recovery",
+   "message": "Step 1: web_search unavailable (web_search: [INJECTED] service unavailable (503) (x3)) → falling back to wikipedia",
+   "data": {
+    "step": 1,
+    "action": "fallback",
+    "tool": "wikipedia"
+   },
+   "ts": 1790447478.4999332
+  },
+  {
+   "type": "recovery",
+   "message": "Step 2: web_search unavailable (web_search: [INJECTED] service unavailable (503) (x3)) → falling back to wikipedia",
+   "data": {
+    "step": 2,
+    "action": "fallback",
+    "tool": "wikipedia"
+   },
+   "ts": 1790447478.4999764
+  },
+  {
+   "type": "step_end",
+   "message": "Step 1 recovered: 6 result(s) in 2148 ms",
+   "data": {
+    "step_id": 1,
+    "tool": "web_search",
+    "query": "Perplexity AI competitors",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to wikipedia",
+    "duration_ms": 2148,
+    "titles": [
+     "OpenAI",
+     "DeepSeek",
+     "DeepSeek (AI)",
+     "Products and applications of OpenAI"
+    ]
+   },
+   "ts": 1790447478.9431553
+  },
+  {
+   "type": "step_end",
+   "message": "Step 2 recovered: 6 result(s) in 2198 ms",
+   "data": {
+    "step_id": 2,
+    "tool": "web_search",
+    "query": "Perplexity AI unique features",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to wikipedia",
+    "duration_ms": 2198,
+    "titles": [
+     "Perplexity AI",
+     "Large language model",
+     "SoftBank Group",
+     "Google Chrome"
+    ]
+   },
+   "ts": 1790447478.9934762
+  },
+  {
+   "type": "recovery",
+   "message": "Step 5: no results → reformulated query to 'Perplexity AI competitors' (The original query 'Perplexity AI discussion' is too broad and might return general conversations about the company rather than specific competitive analysis. To understand the competitive landscape, it's more effective to explicitly search for 'competitors' or 'alternatives' to Perplexity AI. This will likely yield discussions comparing Perplexity AI with other search engines, AI assistants, or knowledge platforms, which is crucial for a competitive-landscape brief.)",
+   "data": {
+    "step": 5,
+    "action": "reformulate",
+    "query": "Perplexity AI competitors"
+   },
+   "ts": 1790447489.105638
+  },
+  {
+   "type": "recovery",
+   "message": "Step 5: hackernews unavailable (no results even after reformulation) → falling back to web_search",
+   "data": {
+    "step": 5,
+    "action": "fallback",
+    "tool": "web_search"
+   },
+   "ts": 1790447489.409833
+  },
+  {
+   "type": "recovery",
+   "message": "Step 5: web_search: [INJECTED] service unavailable (503) → retrying in 0.5s",
+   "data": {
+    "step": 5,
+    "action": "retry",
+    "attempt": 1
+   },
+   "ts": 1790447489.4110901
+  },
+  {
+   "type": "recovery",
+   "message": "Step 5: web_search: [INJECTED] service unavailable (503) → retrying in 1.0s",
+   "data": {
+    "step": 5,
+    "action": "retry",
+    "attempt": 2
+   },
+   "ts": 1790447490.0047688
+  },
+  {
+   "type": "step_end",
+   "message": "Step 5 failed: 0 result(s) in 14209 ms — no results even after reformulation; fallback web_search also failed: web_search: [INJECTED] service unavailable (503) (x3)",
+   "data": {
+    "step_id": 5,
+    "tool": "hackernews",
+    "query": "Perplexity AI discussion",
+    "status": "failed",
+    "attempts": 2,
+    "error": "no results even after reformulation; fallback web_search also failed: web_search: [INJECTED] service unavailable (503) (x3)",
+    "recovery": null,
+    "duration_ms": 14209,
+    "titles": []
+   },
+   "ts": 1790447491.0046935
+  },
+  {
+   "type": "info",
+   "message": "Dedup & relevance filter: kept 14 of 24 results",
+   "data": {
+    "raw": 24,
+    "url_dupes": 0,
+    "near_dupes": 0,
+    "irrelevant": 10,
+    "kept": 14
+   },
+   "ts": 1790447491.0907745
+  },
+  {
+   "type": "info",
+   "message": "Reflection: evidence covers all sub-questions",
+   "data": {},
+   "ts": 1790447532.6155314
+  },
+  {
+   "type": "info",
+   "message": "Synthesising report from 14 sources",
+   "data": {},
+   "ts": 1790447533.5041091
+  },
+  {
+   "type": "report",
+   "message": "Report ready",
+   "data": {
+    "title": "Perplexity AI Competitive Landscape Brief",
+    "summary": "Perplexity AI is a privately held American software company offering an AI-powered web search engine that synthesizes responses from current internet content and cites its sources. Founded in August 2022, it provides both a free public version and a paid Pro subscription with advanced features. The company faces competition from other AI tools like Claude and DeepSeek, and operates within a rapidly evolving and highly capitalized AI market.",
+    "key_points": [
+     {
+      "text": "Perplexity AI is an American software company that provides a web search engine utilizing large language models to process user queries, synthesize responses from current internet content, and cite sources.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "The company offers a free public version of its product, with a paid Pro subscription providing access to more advanced language models and additional features.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "Perplexity AI was founded on August 22, 2022, by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "The AI market is characterized by significant capital expenditure, with forecasts of trillions of dollars required for AI data center infrastructure by 2030, indicating intense competition and investment.",
+      "citations": [
+       7
+      ]
+     },
+     {
+      "text": "Perplexity AI has recently entered a multi-year AI partnership with Crusoe.",
+      "citations": [
+       5
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "text": "Perplexity AI's core product is a web search engine that uses large language models to synthesize responses based on current internet content, providing citations for the sources used.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "A free version of Perplexity AI is available, while a Pro subscription offers advanced language models and additional features.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "Perplexity AI was founded on August 22, 2022.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "DeepSeek, a Chinese AI company, developed a generative AI chatbot called DeepSeek-R1, which surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States by January 27, 2025.",
+      "citations": [
+       6
+      ]
+     },
+     {
+      "text": "DeepSeek is owned and funded by High-Flyer, a Chinese hedge fund, and develops open weights large language models.",
+      "citations": [
+       8
+      ]
+     },
+     {
+      "text": "There are ongoing discussions and comparisons between AI tools like Claude and Perplexity regarding their utility in 2026.",
+      "citations": [
+       4
+      ]
+     },
+     {
+      "text": "Citigroup forecasts $2.8 trillion in capital expenditure for AI data center infrastructure by 2030, while McKinsey estimates almost $7 trillion will be spent globally by that time.",
+      "citations": [
+       7
+      ]
+     }
+    ],
+    "insights": [
+     "Perplexity AI should continue to emphasize its source-citing capability as a key differentiator in the AI search market, especially given concerns about information control and privacy with other AI models.",
+     "Given the intense competition and significant capital investment in the AI sector, Perplexity AI should explore further strategic partnerships to enhance its technological capabilities and market reach.",
+     "Perplexity AI should monitor regulatory developments and public perception closely, particularly regarding issues like children's safety and data collection, to proactively address potential concerns and maintain user trust.",
+     "To compete effectively against rapidly growing rivals like DeepSeek, Perplexity AI should continuously innovate its language models and feature set, potentially leveraging its Pro subscription model for advanced user segments.",
+     "Perplexity AI should consider expanding its global market presence, learning from the rapid international success of competitors like DeepSeek in challenging established players."
+    ],
+    "limitations": [
+     "The provided sources mention a lawsuit against Perplexity AI by a Swiss startup regarding 'passive listening tech' and a report raising concerns about 'unacceptable risk' to children's safety, but lack details on the specifics or outcomes of these allegations.",
+     "While Claude is mentioned as a competitor, the sources do not provide detailed information about its features, market share, or specific competitive advantages relative to Perplexity AI.",
+     "The competitive landscape information is somewhat fragmented, with some sources focusing on specific competitors (DeepSeek, Claude) and others on broader market trends (AI build-out financing), making a comprehensive direct comparison challenging.",
+     "Information regarding Perplexity AI's current market share, user base growth, or specific financial performance is not available in the provided sources.",
+     "Some sources could not be reached: hackernews (step 5)."
+    ],
+    "references": [
+     {
+      "title": "Perplexity AI",
+      "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI, Inc., or simply Perplexity, is an American privately held software company offering a web search engine that processes user queries and synthesizes responses. Perplexity products use large language models and include web search capabilities which provide responses based on current Internet content, citing sources used. A free public version is available, while a paid Pro subscription offers access to more advanced language models and additional features.\nPerplexity AI, Inc., was founded in 22 August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho, and Andy Konwinski.",
+      "source": "wikipedia",
+      "published": null,
+      "score": 0.429,
+      "id": 1
+     },
+     {
+      "title": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? - Memeburn",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBiYUVBT3VpVXdXSXhmc0xUNC1ZVzRhTkNwQy1ldklqamw5SjdKSUJFX0xUbTQ2cHJMcEluSHljcnljSHp6YUhnNlhJRTB1SEM2YVZ5aQ?oc=5",
+      "snippet": "Claude vs Perplexity: Which AI Tool Should You Use in 2026? Memeburn (Memeburn)",
+      "source": "news",
+      "published": "Sat, 26 Sep 2026 16:45:49 GMT",
+      "score": 0.343,
+      "id": 4
+     },
+     {
+      "title": "Crusoe and Perplexity Announce Multi-Year AI Partnership - Crusoe",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKc3pFNk8zWVZKQXVNdEJuSnhULVYzcGR3bFFHUHBhbFFBREFDUlI0Q2lZckp3SzRqaWhkRTdMRksybndONHZ5MFVlWmxtc0Etd21yOHJRWHlQZ0c2MzJLcl9LNl9ZWVV3RUF0TlBnMVZod0ttR0E2TXl3?oc=5",
+      "snippet": "Crusoe and Perplexity Announce Multi-Year AI Partnership Crusoe (Crusoe)",
+      "source": "news",
+      "published": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "score": 0.343,
+      "id": 5
+     },
+     {
+      "title": "DeepSeek (AI)",
+      "url": "https://en.wikipedia.org/wiki/DeepSeek_(AI)",
+      "snippet": "DeepSeek is a generative artificial intelligence chatbot developed by the Chinese company DeepSeek. Released on 20 January 2025, DeepSeek-R1 surpassed ChatGPT as the most downloaded freeware app on the iOS App Store in the United States by 27 January. DeepSeek's success against larger and more established rivals has been described as \"upending AI\" and initiating \"a global AI space race\". DeepSeek's compliance with Chinese government censorship policies and its data collection practices have also raised concerns over privacy and information control in the model, prompting regulatory scrutiny in multiple countries.",
+      "source": "wikipedia",
+      "published": null,
+      "score": 0.257,
+      "id": 6
+     },
+     {
+      "title": "AI build-out financing",
+      "url": "https://en.wikipedia.org/wiki/AI_build-out_financing",
+      "snippet": "To finance the build-out of AI data centres during the 2020s, an unprecedented amount of capital has been mobilised in the USA in particular amid a broad competition for global technnological supremacy in artificial intelligence. \nCitigroup forecast that $2.8 trillion of capital expenditure would be required for AI data centre infrastructure by 2030, while McKinsey estimated that almost $7 trillion would be spent globally by that time. Between January and August 2024, Microsoft, Meta, Google and Amazon collectively spent $125 billion on AI data centres. According to S&P Global, $61 billion has been spent on the data centre market as a whole in 2025, while debt issuance for data centres was $182 billion during the same year.",
+      "source": "wikipedia",
+      "published": null,
+      "score": 0.171,
+      "id": 7
+     },
+     {
+      "title": "DeepSeek",
+      "url": "https://en.wikipedia.org/wiki/DeepSeek",
+      "snippet": "Hangzhou DeepSeek Artificial Intelligence Basic Technology Research Co., Ltd., doing business as DeepSeek, is a Chinese artificial intelligence (AI) company that develops open weights large language models (LLMs). Based in Hangzhou, Zhejiang, DeepSeek is owned and funded by High-Flyer, a Chinese hedge fund.",
+      "source": "wikipedia",
+      "published": null,
+      "score": 0.171,
+      "id": 8
+     }
+    ]
+   },
+   "ts": 1790447560.9404547
+  },
+  {
+   "type": "done",
+   "message": "Done in 97.68s",
+   "data": {
+    "run_id": "5a66d6b944",
+    "stats": {
+     "raw": 24,
+     "url_dupes": 0,
+     "near_dupes": 0,
+     "irrelevant": 10,
+     "kept": 14,
+     "tool_calls": 15,
+     "steps": 5,
+     "recovered": 2,
+     "failed": 1,
+     "llm_calls": 3,
+     "llm_tokens": 3779,
+     "citation_warnings": 0,
+     "duration_s": 97.68,
+     "sources_used": [
+      "news",
+      "wikipedia"
+     ]
+    }
+   },
+   "ts": 1790447560.9404683
+  }
+ ]
+}

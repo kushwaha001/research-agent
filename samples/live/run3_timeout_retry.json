@@ -1,0 +1,1208 @@
+{
+ "run_id": "fb2989e67f",
+ "goal": "State of the art in vessel trajectory prediction from AIS data",
+ "llm": "gemini:gemini-2.5-flash",
+ "plan": {
+  "goal": "State of the art in vessel trajectory prediction from AIS data",
+  "interpretation": "The goal is to understand the current state-of-the-art methods and technologies used for predicting vessel trajectories using Automatic Identification System (AIS) data. This includes identifying key research, common techniques, and potentially available code or implementations.",
+  "sub_questions": [
+   "What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+   "What machine learning or deep learning models are commonly applied for this task?",
+   "Are there any prominent open-source implementations or datasets available for vessel trajectory prediction?",
+   "What are the main challenges and future directions in this field?"
+  ],
+  "steps": [
+   {
+    "id": 1,
+    "tool": "arxiv",
+    "query": "vessel trajectory prediction AIS deep learning",
+    "rationale": "To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.",
+    "depends_on": []
+   },
+   {
+    "id": 2,
+    "tool": "arxiv",
+    "query": "AIS vessel movement prediction challenges",
+    "rationale": "To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.",
+    "depends_on": []
+   },
+   {
+    "id": 3,
+    "tool": "github",
+    "query": "vessel trajectory prediction AIS",
+    "rationale": "To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.",
+    "depends_on": []
+   },
+   {
+    "id": 4,
+    "tool": "web_search",
+    "query": "state of the art vessel trajectory prediction AIS review",
+    "rationale": "To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.",
+    "depends_on": []
+   },
+   {
+    "id": 5,
+    "tool": "arxiv",
+    "query": "most recent research advancements vessel trajectory prediction AIS data",
+    "rationale": "Gap: What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+    "depends_on": []
+   },
+   {
+    "id": 6,
+    "tool": "arxiv",
+    "query": "challenges and future directions vessel trajectory prediction AIS data",
+    "rationale": "Gap: What are the main challenges and future directions in this field?",
+    "depends_on": []
+   }
+  ],
+  "source_rationale": "Arxiv is chosen for its focus on research papers, which are essential for identifying state-of-the-art methods and models. GitHub is selected to find open-source implementations and code related to these methods. Web search will be used for broader context, identifying key terms, challenges, and potentially commercial applications or overviews not covered by academic papers or code repositories."
+ },
+ "steps": [
+  {
+   "step_id": 1,
+   "tool": "arxiv",
+   "query": "vessel trajectory prediction AIS deep learning",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "Vessel Golf Bags | Premium Golf Equipment & Accessories",
+     "url": "https://vesselgolf.com/",
+     "snippet": "Experience luxury with Vessel's premium golf bags and accessories. Designed for performance and style, our products cater to golfers seeking the best.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 07:45:00 GMT",
+     "score": 0.171,
+     "id": 14
+    },
+    {
+     "title": "VESSEL Definition & Meaning - Merriam-Webster",
+     "url": "https://www.merriam-webster.com/dictionary/vessel",
+     "snippet": "The meaning of VESSEL is a container (such as a cask, bottle, kettle, cup, or bowl) for holding something. How to use vessel in a sentence.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 02:51:00 GMT",
+     "score": 0.171,
+     "id": 16
+    },
+    {
+     "title": "VESSEL® - Vape Pen Batteries, Cases, and More",
+     "url": "https://www.vesselbrand.com/",
+     "snippet": "Discover the Vessel experience. Our vape pen batteries power your 510 thread oil cartridges. Featuring smart power management, optimized power band with 4 power settings, the smoothest airflow, a magnetic charging port, and styles/materials that make Vessel stand alone. Shop batteries, cases, and charging stands today.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 00:28:00 GMT",
+     "score": 0.171,
+     "id": 10
+    },
+    {
+     "title": "Ship & Container Tracking - VesselFinder",
+     "url": "https://www.vesselfinder.com/",
+     "snippet": "VesselFinder is a FREE AIS vessel tracking web site. VesselFinder displays real time ship positions and marine traffic detected by global AIS network.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 16:49:00 GMT",
+     "score": 0.171,
+     "id": 15
+    },
+    {
+     "title": "MarineTraffic: Global Ship Tracking Intelligence | AIS Marine Traffic",
+     "url": "https://www.marinetraffic.com/",
+     "snippet": "MarineTraffic Live Ships Map. Discover information and vessel positions for vessels around the world. Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. Search for popular ships globally. Find locations of ports and ships using the near Real Time ships map. View vessel details and ship photos.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 17:03:00 GMT",
+     "score": 0.171,
+     "id": 9
+    },
+    {
+     "title": "VESSEL | English meaning - Cambridge Dictionary",
+     "url": "https://dictionary.cambridge.org/dictionary/english/vessel",
+     "snippet": "VESSEL definition: 1. a large boat or a ship: 2. a curved container that is used to hold liquid: 3. a person who has…. Learn more.",
+     "source": "web_search",
+     "published": "Fri, 14 Aug 2026 11:21:00 GMT",
+     "score": 0.171,
+     "id": 17
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to web_search",
+   "duration_ms": 1982
+  },
+  {
+   "step_id": 2,
+   "tool": "arxiv",
+   "query": "AIS vessel movement prediction challenges",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "MarineTraffic: Global Ship Tracking Intelligence | AIS Marine ...",
+     "url": "https://www.marinetraffic.com/",
+     "snippet": "Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. Search for popular ships globally. Find locations of ports and ships using the near Real Time ships map. View vessel details and ship photos.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 17:32:00 GMT",
+     "score": 0.171,
+     "id": 0
+    },
+    {
+     "title": "Ship & Container Tracking - VesselFinder",
+     "url": "https://www.vesselfinder.com/",
+     "snippet": "VesselFinder displays real time ship positions and marine traffic detected by global AIS network.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 17:18:00 GMT",
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "Automatic identification system - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Automatic_identification_system",
+     "snippet": "The practice of AIS spoofing, also known in the shipping industry as first-party spoofing, involves the transmission of AIS signals containing falsified information, particularly regarding the transmitting vessel's location.",
+     "source": "web_search",
+     "published": "Sun, 13 Sep 2026 00:58:00 GMT",
+     "score": 0.171,
+     "id": 13
+    },
+    {
+     "title": "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ...",
+     "url": "https://www.myshiptracking.com/",
+     "snippet": "My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service. With this vessel tracker you can monitor ship positions, vessel tracking, ship tracking, vessel position, vessels traffic, port activity in realtime map.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 17:32:00 GMT",
+     "score": 0.343,
+     "id": 5
+    },
+    {
+     "title": "Marine Traffic - AIS ship tracking",
+     "url": "https://www.marinetraffic.org/marine-traffic",
+     "snippet": "Marine Traffic displays real time AIS vessels information and ships movements throughout the seas and ports over Google maps.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 16:57:00 GMT",
+     "score": 0.171,
+     "id": 18
+    },
+    {
+     "title": "Voyage Radar - Free Live Ship Tracker, Voyage History ...",
+     "url": "https://aisvesseltracker.com/",
+     "snippet": "AIS (Automatic Identification System) is a VHF radio standard mandated by the IMO for vessels over 300 gross tons on international voyages. Every AIS-equipped ship continuously broadcasts its MMSI, vessel name, position, speed, course, navigational status, destination, and draught.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 16:06:00 GMT",
+     "score": 0.171,
+     "id": 11
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to web_search",
+   "duration_ms": 1600
+  },
+  {
+   "step_id": 3,
+   "tool": "github",
+   "query": "vessel trajectory prediction AIS",
+   "status": "ok",
+   "attempts": 1,
+   "docs": [
+    {
+     "title": "gotu0000/Apollo",
+     "url": "https://github.com/gotu0000/Apollo",
+     "snippet": "★19 · Jupyter Notebook · Codebase for vessel trajectory prediction using historical AIS data",
+     "source": "github",
+     "published": "2021-11-18T06:52:43Z",
+     "score": 0.429,
+     "id": 4
+    },
+    {
+     "title": "Raindrops69Whee/AIS-Vessel-Trajectory-Prediction",
+     "url": "https://github.com/Raindrops69Whee/AIS-Vessel-Trajectory-Prediction",
+     "snippet": "★13 · Python · ",
+     "source": "github",
+     "published": "2023-03-08T00:43:51Z",
+     "score": 0.343,
+     "id": 7
+    },
+    {
+     "title": "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+     "url": "https://github.com/Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+     "snippet": "★9 · Jupyter Notebook · DBSCAN and VARMAX based trajectory and collision prediction of vessels using Automatic Identification System data. ",
+     "source": "github",
+     "published": "2024-11-17T07:12:18Z",
+     "score": 0.686,
+     "id": 1
+    },
+    {
+     "title": "csefaisel/Vessel_Trajectory_Prediction",
+     "url": "https://github.com/csefaisel/Vessel_Trajectory_Prediction",
+     "snippet": "★7 · Python · Unofficial Implementation of Paper: Deep Learning Methods for Vessel Trajectory Prediction based on Recurrent Neural Networks",
+     "source": "github",
+     "published": "2025-02-11T03:34:50Z",
+     "score": 0.514,
+     "id": 3
+    },
+    {
+     "title": "KaysenWB/TII_SGlow",
+     "url": "https://github.com/KaysenWB/TII_SGlow",
+     "snippet": "★4 · Python · Official PyTorch implementation of SGlow, a conditional normalizing-flow model for multimodal AIS vessel trajectory prediction under navigational uncertainty (IEEE TII 2026).",
+     "source": "github",
+     "published": "2026-08-10T14:19:55Z",
+     "score": 0.343,
+     "id": 6
+    },
+    {
+     "title": "Danialba/ais-vessel-trajectory-prediction",
+     "url": "https://github.com/Danialba/ais-vessel-trajectory-prediction",
+     "snippet": "★1 · Jupyter Notebook · AIS vessel trajectory prediction using a variety of AI algorithms.",
+     "source": "github",
+     "published": "2025-08-14T16:38:38Z",
+     "score": 0.686,
+     "id": 2
+    }
+   ],
+   "error": null,
+   "recovery": null,
+   "duration_ms": 1007
+  },
+  {
+   "step_id": 4,
+   "tool": "web_search",
+   "query": "state of the art vessel trajectory prediction AIS review",
+   "status": "ok",
+   "attempts": 1,
+   "docs": [
+    {
+     "title": "State Farm® | An Insurance Company Valued For Over 100 Years",
+     "url": "https://www.statefarm.com/",
+     "snippet": "Explore the options State Farm offers with homeowners insurance from bundling 2 and home protection devices to roofing material or wind mitigation discounts. Since 1922, we’ve been working hard to help better protect you and those you love.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 21:01:00 GMT",
+     "score": 0.171,
+     "id": 12
+    },
+    {
+     "title": "U.S. Department of State – Home",
+     "url": "https://www.state.gov/",
+     "snippet": "Leading U.S. foreign policy to advance the interests and security of the American people.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 14:41:00 GMT",
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "California State Portal | CA.gov",
+     "url": "https://www.ca.gov/",
+     "snippet": "CA.gov is the official website for the State of California. You can find and access California services, resources, and more.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 00:43:00 GMT",
+     "score": 0.171,
+     "id": 0
+    },
+    {
+     "title": "U.S. state - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/U.S._state",
+     "snippet": "In the United States, a state is a constituent political entity, of which there are 50. Bound together in a political union, each state holds governmental jurisdiction over a separate and defined geographic territory where it shares its sovereignty with the federal government. Due to this shared sovereignty, Americans are citizens both of the federal republic and of the state in which they ... … In the United States , a state is a constituent political entity , of which there are 50. Bound together in a political union , each state holds governmental jurisdiction over a separate and defined geographic territory where it shares its sovereignty with the federal government . Due to this shared sovereignty , Americans are citizens both of the federal republic and of the state in which they reside . [ 3 ] State citizenship and residency are flexible, and no government approval is required to move between states , except for persons restricted by certain types of court orders, such as paroled convicts and children of divorced spouses who share child custody . State governments in the U.S. are allocated power by the people of each respective state through their individual state constitutions . All are grounded in republican principles (this being required by the federal constitution), and each provides for a government, consisting of three branches, each with separate and independent powers : executive , legislative , and judicial . [ 4 ] States are divided into counties or county-equivalents, which may be assigned some local governmental authority but are not sovereign. County or county-equivalent structure varies widely by state, and states also create other local governments . States, unlike U.S. territories , possess many powers and rights under the United States Constitut",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 03:57:00 GMT",
+     "score": 0.171,
+     "id": 8
+    },
+    {
+     "title": "List of states and territories of the United States - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States",
+     "snippet": "Each state has its own constitution and government. All states and their residents are represented in the federal Congress, a bicameral legislature consisting of the Senate and the House of Representatives.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 22:27:00 GMT",
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "List of U.S. states - Simple English Wikipedia, the free ...",
+     "url": "https://simple.wikipedia.org/wiki/List_of_U.S._states",
+     "snippet": "Washington D.C., (Washington, District of Columbia) is a federal district and capital of the United States and is not considered a state. The United States also has sovereignty over 14 other territories. These are not included in this list. Click on any state to learn more about that state.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 20:46:00 GMT",
+     "score": 0.086,
+     "id": 0
+    }
+   ],
+   "error": null,
+   "recovery": null,
+   "duration_ms": 610
+  },
+  {
+   "step_id": 5,
+   "tool": "arxiv",
+   "query": "most recent research advancements vessel trajectory prediction AIS data",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+     "url": "https://www.microsoft.com/en-us",
+     "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, Windows, Azure, Surface and more.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 13:29:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+     "url": "https://account.microsoft.com/account",
+     "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 23:53:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "My Account",
+     "url": "https://myaccount.microsoft.com/",
+     "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place.",
+     "source": "web_search",
+     "published": "Sat, 26 Sep 2026 03:42:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Microsoft - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Microsoft",
+     "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company became influential in the rise of personal computers through software like Windows and has since expanded into areas such as Internet services, cloud computing, artificial intelligence, video gaming, and more.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 22:34:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+     "url": "https://www.microsoft.com/en-us/microsoft-365",
+     "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and powerful AI. Try for free.",
+     "source": "web_search",
+     "published": "Tue, 28 Oct 2025 02:24:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Home | Microsoft Careers",
+     "url": "https://careers.microsoft.com/",
+     "snippet": "Do what you love. Create the future you want. Explore the career options that Microsoft has to offer Stage.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 18:30:00 GMT",
+     "score": 0,
+     "id": 0
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to web_search",
+   "duration_ms": 1922
+  },
+  {
+   "step_id": 6,
+   "tool": "arxiv",
+   "query": "challenges and future directions vessel trajectory prediction AIS data",
+   "status": "recovered",
+   "attempts": 4,
+   "docs": [
+    {
+     "title": "CHALLENGES Synonyms: 170 Similar and Opposite Words - Merriam-Webster",
+     "url": "https://www.merriam-webster.com/thesaurus/challenges",
+     "snippet": "Synonyms for CHALLENGES: objections, exceptions, complaints, questions, difficulties, protests, criticisms, demurrers; Antonyms of CHALLENGES: sanctions, approvals, agreements, acceptances, assents, acquiescences, compliances, obediences",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 22:12:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "CHALLENGE | English meaning - Cambridge Dictionary",
+     "url": "https://dictionary.cambridge.org/dictionary/english/challenge",
+     "snippet": "An awesome challenge lies ahead of them. Finding a cure for cancer is one of the biggest challenges facing medical researchers. I've promised to finish the task by Friday, but it's going to be quite a challenge. It could be a bit of a challenge getting the piano through the doorway.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 20:39:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "CHALLENGE Definition & Meaning - Merriam-Webster",
+     "url": "https://www.merriam-webster.com/dictionary/challenge",
+     "snippet": "transitive verb 1 : to dispute especially as being unjust, invalid, or outmoded : impugn new data that challenges old assumptions",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 22:05:00 GMT",
+     "score": 0.086,
+     "id": 0
+    },
+    {
+     "title": "Challenges - YouTube",
+     "url": "https://www.youtube.com/playlist?list=PLjKqtOxLDxcwJB7vte-BqRZ0YrS9M7Qdx",
+     "snippet": "We are proud to present the coolest and most popular YouTube video challenges. We are always producing new fun and exciting video challenges and when we're not producing we're curating!",
+     "source": "web_search",
+     "published": "Wed, 23 Sep 2026 07:13:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "What is challenges? – Focuskeeper Glossary",
+     "url": "https://focuskeeper.co/glossary/what-is-challenges",
+     "snippet": "Challenges are an inherent part of life that can shape who we are and how we navigate our personal and professional journeys. They can appear in various forms and often test our resilience, adaptability, and problem-solving skills.",
+     "source": "web_search",
+     "published": "Fri, 25 Sep 2026 04:04:00 GMT",
+     "score": 0,
+     "id": 0
+    },
+    {
+     "title": "Challenges - definition of challenges by The Free Dictionary",
+     "url": "https://www.thefreedictionary.com/challenges",
+     "snippet": "Define challenges. challenges synonyms, challenges pronunciation, challenges translation, English dictionary definition of challenges. n. 1. a. A call to engage in a contest, fight, or competition: a challenge to a duel. b. An act or statement of defiance; a call to confrontation: a...",
+     "source": "web_search",
+     "published": "Mon, 14 Sep 2026 18:51:00 GMT",
+     "score": 0,
+     "id": 0
+    }
+   ],
+   "error": null,
+   "recovery": "fell back to web_search",
+   "duration_ms": 1922
+  }
+ ],
+ "report": {
+  "title": "Research brief: State of the art in vessel trajectory prediction from AIS data",
+  "summary": "Gathered 18 distinct, relevant sources from github, web_search. This summary was produced extractively (no LLM configured), so points are quoted from sources rather than synthesised.",
+  "key_points": [
+   {
+    "text": "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "Danialba/ais-vessel-trajectory-prediction",
+    "citations": [
+     2
+    ]
+   },
+   {
+    "text": "csefaisel/Vessel_Trajectory_Prediction",
+    "citations": [
+     3
+    ]
+   },
+   {
+    "text": "gotu0000/Apollo",
+    "citations": [
+     4
+    ]
+   },
+   {
+    "text": "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ...",
+    "citations": [
+     5
+    ]
+   }
+  ],
+  "findings": [
+   {
+    "text": "★1 · Jupyter Notebook · AIS vessel trajectory prediction using a variety of AI algorithms.",
+    "citations": [
+     2
+    ]
+   },
+   {
+    "text": "★19 · Jupyter Notebook · Codebase for vessel trajectory prediction using historical AIS data",
+    "citations": [
+     4
+    ]
+   },
+   {
+    "text": "★9 · Jupyter Notebook · DBSCAN and VARMAX based trajectory and collision prediction of vessels using Automatic Identification System data.",
+    "citations": [
+     1
+    ]
+   },
+   {
+    "text": "★7 · Python · Unofficial Implementation of Paper: Deep Learning Methods for Vessel Trajectory Prediction based on Recurrent Neural Networks",
+    "citations": [
+     3
+    ]
+   },
+   {
+    "text": "★4 · Python · Official PyTorch implementation of SGlow, a conditional normalizing-flow model for multimodal AIS vessel trajectory prediction under navigational uncertainty (IEEE TII 2026).",
+    "citations": [
+     6
+    ]
+   },
+   {
+    "text": "My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service.",
+    "citations": [
+     5
+    ]
+   }
+  ],
+  "insights": [
+   "Read the top-ranked sources first:,,.",
+   "Cross-check claims that appear in only one source before acting on them.",
+   "Configure an LLM key for synthesised, non-extractive insights."
+  ],
+  "limitations": [
+   "Extractive mode: no cross-source reasoning was performed."
+  ],
+  "references": [
+   {
+    "title": "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+    "url": "https://github.com/Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+    "snippet": "★9 · Jupyter Notebook · DBSCAN and VARMAX based trajectory and collision prediction of vessels using Automatic Identification System data. ",
+    "source": "github",
+    "published": "2024-11-17T07:12:18Z",
+    "score": 0.686,
+    "id": 1
+   },
+   {
+    "title": "Danialba/ais-vessel-trajectory-prediction",
+    "url": "https://github.com/Danialba/ais-vessel-trajectory-prediction",
+    "snippet": "★1 · Jupyter Notebook · AIS vessel trajectory prediction using a variety of AI algorithms.",
+    "source": "github",
+    "published": "2025-08-14T16:38:38Z",
+    "score": 0.686,
+    "id": 2
+   },
+   {
+    "title": "csefaisel/Vessel_Trajectory_Prediction",
+    "url": "https://github.com/csefaisel/Vessel_Trajectory_Prediction",
+    "snippet": "★7 · Python · Unofficial Implementation of Paper: Deep Learning Methods for Vessel Trajectory Prediction based on Recurrent Neural Networks",
+    "source": "github",
+    "published": "2025-02-11T03:34:50Z",
+    "score": 0.514,
+    "id": 3
+   },
+   {
+    "title": "gotu0000/Apollo",
+    "url": "https://github.com/gotu0000/Apollo",
+    "snippet": "★19 · Jupyter Notebook · Codebase for vessel trajectory prediction using historical AIS data",
+    "source": "github",
+    "published": "2021-11-18T06:52:43Z",
+    "score": 0.429,
+    "id": 4
+   },
+   {
+    "title": "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ...",
+    "url": "https://www.myshiptracking.com/",
+    "snippet": "My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service. With this vessel tracker you can monitor ship positions, vessel tracking, ship tracking, vessel position, vessels traffic, port activity in realtime map.",
+    "source": "web_search",
+    "published": "Sat, 26 Sep 2026 17:32:00 GMT",
+    "score": 0.343,
+    "id": 5
+   },
+   {
+    "title": "KaysenWB/TII_SGlow",
+    "url": "https://github.com/KaysenWB/TII_SGlow",
+    "snippet": "★4 · Python · Official PyTorch implementation of SGlow, a conditional normalizing-flow model for multimodal AIS vessel trajectory prediction under navigational uncertainty (IEEE TII 2026).",
+    "source": "github",
+    "published": "2026-08-10T14:19:55Z",
+    "score": 0.343,
+    "id": 6
+   }
+  ]
+ },
+ "stats": {
+  "raw": 36,
+  "url_dupes": 2,
+  "near_dupes": 0,
+  "irrelevant": 15,
+  "kept": 18,
+  "tool_calls": 12,
+  "steps": 6,
+  "recovered": 4,
+  "failed": 0,
+  "llm_calls": 2,
+  "llm_tokens": 2403,
+  "citation_warnings": 0,
+  "duration_s": 70.49,
+  "sources_used": [
+   "github",
+   "web_search"
+  ]
+ },
+ "trace": [
+  {
+   "type": "info",
+   "message": "Goal received. LLM: gemini:gemini-2.5-flash",
+   "data": {
+    "run_id": "fb2989e67f",
+    "goal": "State of the art in vessel trajectory prediction from AIS data",
+    "llm": "gemini:gemini-2.5-flash",
+    "offline": false,
+    "fault": {
+     "mode": "timeout",
+     "tool": "arxiv"
+    }
+   },
+   "ts": 1790447462.997342
+  },
+  {
+   "type": "plan",
+   "message": "Plan: 4 steps across 3 sources",
+   "data": {
+    "goal": "State of the art in vessel trajectory prediction from AIS data",
+    "interpretation": "The goal is to understand the current state-of-the-art methods and technologies used for predicting vessel trajectories using Automatic Identification System (AIS) data. This includes identifying key research, common techniques, and potentially available code or implementations.",
+    "sub_questions": [
+     "What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+     "What machine learning or deep learning models are commonly applied for this task?",
+     "Are there any prominent open-source implementations or datasets available for vessel trajectory prediction?",
+     "What are the main challenges and future directions in this field?"
+    ],
+    "steps": [
+     {
+      "id": 1,
+      "tool": "arxiv",
+      "query": "vessel trajectory prediction AIS deep learning",
+      "rationale": "To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.",
+      "depends_on": []
+     },
+     {
+      "id": 2,
+      "tool": "arxiv",
+      "query": "AIS vessel movement prediction challenges",
+      "rationale": "To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.",
+      "depends_on": []
+     },
+     {
+      "id": 3,
+      "tool": "github",
+      "query": "vessel trajectory prediction AIS",
+      "rationale": "To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.",
+      "depends_on": []
+     },
+     {
+      "id": 4,
+      "tool": "web_search",
+      "query": "state of the art vessel trajectory prediction AIS review",
+      "rationale": "To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.",
+      "depends_on": []
+     }
+    ],
+    "source_rationale": "Arxiv is chosen for its focus on research papers, which are essential for identifying state-of-the-art methods and models. GitHub is selected to find open-source implementations and code related to these methods. Web search will be used for broader context, identifying key terms, challenges, and potentially commercial applications or overviews not covered by academic papers or code repositories."
+   },
+   "ts": 1790447476.4912694
+  },
+  {
+   "type": "info",
+   "message": "Running 4 steps in parallel",
+   "data": {
+    "steps": [
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "ts": 1790447476.4912946
+  },
+  {
+   "type": "step_start",
+   "message": "Step 1: arxiv('vessel trajectory prediction AIS deep learning')",
+   "data": {
+    "id": 1,
+    "tool": "arxiv",
+    "query": "vessel trajectory prediction AIS deep learning",
+    "rationale": "To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.",
+    "depends_on": []
+   },
+   "ts": 1790447476.4914782
+  },
+  {
+   "type": "step_start",
+   "message": "Step 2: arxiv('AIS vessel movement prediction challenges')",
+   "data": {
+    "id": 2,
+    "tool": "arxiv",
+    "query": "AIS vessel movement prediction challenges",
+    "rationale": "To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.",
+    "depends_on": []
+   },
+   "ts": 1790447476.4915721
+  },
+  {
+   "type": "step_start",
+   "message": "Step 3: github('vessel trajectory prediction AIS')",
+   "data": {
+    "id": 3,
+    "tool": "github",
+    "query": "vessel trajectory prediction AIS",
+    "rationale": "To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.",
+    "depends_on": []
+   },
+   "ts": 1790447476.4916043
+  },
+  {
+   "type": "step_start",
+   "message": "Step 4: web_search('state of the art vessel trajectory prediction AIS review')",
+   "data": {
+    "id": 4,
+    "tool": "web_search",
+    "query": "state of the art vessel trajectory prediction AIS review",
+    "rationale": "To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.",
+    "depends_on": []
+   },
+   "ts": 1790447476.491641
+  },
+  {
+   "type": "recovery",
+   "message": "Step 1: arxiv: [INJECTED] timed out after 8.0s → retrying in 0.5s",
+   "data": {
+    "step": 1,
+    "action": "retry",
+    "attempt": 1
+   },
+   "ts": 1790447476.691876
+  },
+  {
+   "type": "step_end",
+   "message": "Step 4 ok: 6 result(s) in 610 ms",
+   "data": {
+    "step_id": 4,
+    "tool": "web_search",
+    "query": "state of the art vessel trajectory prediction AIS review",
+    "status": "ok",
+    "attempts": 1,
+    "error": null,
+    "recovery": null,
+    "duration_ms": 610,
+    "titles": [
+     "State Farm® | An Insurance Company Valued For Over 100 Years",
+     "U.S. Department of State – Home",
+     "California State Portal | CA.gov",
+     "U.S. state - Wikipedia"
+    ]
+   },
+   "ts": 1790447477.1017702
+  },
+  {
+   "type": "step_end",
+   "message": "Step 3 ok: 6 result(s) in 1007 ms",
+   "data": {
+    "step_id": 3,
+    "tool": "github",
+    "query": "vessel trajectory prediction AIS",
+    "status": "ok",
+    "attempts": 1,
+    "error": null,
+    "recovery": null,
+    "duration_ms": 1007,
+    "titles": [
+     "gotu0000/Apollo",
+     "Raindrops69Whee/AIS-Vessel-Trajectory-Prediction",
+     "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+     "csefaisel/Vessel_Trajectory_Prediction"
+    ]
+   },
+   "ts": 1790447477.4987133
+  },
+  {
+   "type": "recovery",
+   "message": "Step 2: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search",
+   "data": {
+    "step": 2,
+    "action": "fallback",
+    "tool": "web_search"
+   },
+   "ts": 1790447477.701256
+  },
+  {
+   "type": "step_end",
+   "message": "Step 2 recovered: 6 result(s) in 1600 ms",
+   "data": {
+    "step_id": 2,
+    "tool": "arxiv",
+    "query": "AIS vessel movement prediction challenges",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to web_search",
+    "duration_ms": 1600,
+    "titles": [
+     "MarineTraffic: Global Ship Tracking Intelligence | AIS Marine ...",
+     "Ship & Container Tracking - VesselFinder",
+     "Automatic identification system - Wikipedia",
+     "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ..."
+    ]
+   },
+   "ts": 1790447478.0918314
+  },
+  {
+   "type": "recovery",
+   "message": "Step 1: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x2)) → falling back to web_search",
+   "data": {
+    "step": 1,
+    "action": "fallback",
+    "tool": "web_search"
+   },
+   "ts": 1790447478.1924703
+  },
+  {
+   "type": "step_end",
+   "message": "Step 1 recovered: 6 result(s) in 1982 ms",
+   "data": {
+    "step_id": 1,
+    "tool": "arxiv",
+    "query": "vessel trajectory prediction AIS deep learning",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to web_search",
+    "duration_ms": 1982,
+    "titles": [
+     "Vessel Golf Bags | Premium Golf Equipment & Accessories",
+     "VESSEL Definition & Meaning - Merriam-Webster",
+     "VESSEL® - Vape Pen Batteries, Cases, and More",
+     "Ship & Container Tracking - VesselFinder"
+    ]
+   },
+   "ts": 1790447478.4736905
+  },
+  {
+   "type": "info",
+   "message": "Dedup & relevance filter: kept 18 of 24 results",
+   "data": {
+    "raw": 24,
+    "url_dupes": 2,
+    "near_dupes": 0,
+    "irrelevant": 3,
+    "kept": 18
+   },
+   "ts": 1790447478.4753237
+  },
+  {
+   "type": "plan",
+   "message": "Reflection found 2 gap(s) → adding follow-up step(s)",
+   "data": {
+    "goal": "State of the art in vessel trajectory prediction from AIS data",
+    "interpretation": "The goal is to understand the current state-of-the-art methods and technologies used for predicting vessel trajectories using Automatic Identification System (AIS) data. This includes identifying key research, common techniques, and potentially available code or implementations.",
+    "sub_questions": [
+     "What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+     "What machine learning or deep learning models are commonly applied for this task?",
+     "Are there any prominent open-source implementations or datasets available for vessel trajectory prediction?",
+     "What are the main challenges and future directions in this field?"
+    ],
+    "steps": [
+     {
+      "id": 1,
+      "tool": "arxiv",
+      "query": "vessel trajectory prediction AIS deep learning",
+      "rationale": "To identify recent research papers and state-of-the-art models in vessel trajectory prediction using AIS data, focusing on deep learning approaches.",
+      "depends_on": []
+     },
+     {
+      "id": 2,
+      "tool": "arxiv",
+      "query": "AIS vessel movement prediction challenges",
+      "rationale": "To understand the current challenges and limitations in vessel trajectory prediction from an academic perspective.",
+      "depends_on": []
+     },
+     {
+      "id": 3,
+      "tool": "github",
+      "query": "vessel trajectory prediction AIS",
+      "rationale": "To find open-source code, libraries, and implementations related to vessel trajectory prediction using AIS data.",
+      "depends_on": []
+     },
+     {
+      "id": 4,
+      "tool": "web_search",
+      "query": "state of the art vessel trajectory prediction AIS review",
+      "rationale": "To get a broader overview, identify review articles, and potentially find commercial applications or industry perspectives on the state of the art.",
+      "depends_on": []
+     },
+     {
+      "id": 5,
+      "tool": "arxiv",
+      "query": "most recent research advancements vessel trajectory prediction AIS data",
+      "rationale": "Gap: What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+      "depends_on": []
+     },
+     {
+      "id": 6,
+      "tool": "arxiv",
+      "query": "challenges and future directions vessel trajectory prediction AIS data",
+      "rationale": "Gap: What are the main challenges and future directions in this field?",
+      "depends_on": []
+     }
+    ],
+    "source_rationale": "Arxiv is chosen for its focus on research papers, which are essential for identifying state-of-the-art methods and models. GitHub is selected to find open-source implementations and code related to these methods. Web search will be used for broader context, identifying key terms, challenges, and potentially commercial applications or overviews not covered by academic papers or code repositories.",
+    "added": [
+     5,
+     6
+    ]
+   },
+   "ts": 1790447489.6573515
+  },
+  {
+   "type": "info",
+   "message": "Running 2 steps in parallel",
+   "data": {
+    "steps": [
+     5,
+     6
+    ]
+   },
+   "ts": 1790447489.6573684
+  },
+  {
+   "type": "step_start",
+   "message": "Step 5: arxiv('most recent research advancements vessel trajectory prediction AIS data')",
+   "data": {
+    "id": 5,
+    "tool": "arxiv",
+    "query": "most recent research advancements vessel trajectory prediction AIS data",
+    "rationale": "Gap: What are the most recent research advancements in vessel trajectory prediction using AIS data?",
+    "depends_on": []
+   },
+   "ts": 1790447489.657537
+  },
+  {
+   "type": "step_start",
+   "message": "Step 6: arxiv('challenges and future directions vessel trajectory prediction AIS data')",
+   "data": {
+    "id": 6,
+    "tool": "arxiv",
+    "query": "challenges and future directions vessel trajectory prediction AIS data",
+    "rationale": "Gap: What are the main challenges and future directions in this field?",
+    "depends_on": []
+   },
+   "ts": 1790447489.6575706
+  },
+  {
+   "type": "recovery",
+   "message": "Step 6: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search",
+   "data": {
+    "step": 6,
+    "action": "fallback",
+    "tool": "web_search"
+   },
+   "ts": 1790447491.2318044
+  },
+  {
+   "type": "recovery",
+   "message": "Step 5: arxiv unavailable (arxiv: all paper sources failed (arxiv: HTTP 406; arxiv: HTTP 406; arxiv: rate limited (429)) (x1)) → falling back to web_search",
+   "data": {
+    "step": 5,
+    "action": "fallback",
+    "tool": "web_search"
+   },
+   "ts": 1790447491.295793
+  },
+  {
+   "type": "step_end",
+   "message": "Step 6 recovered: 6 result(s) in 1922 ms",
+   "data": {
+    "step_id": 6,
+    "tool": "arxiv",
+    "query": "challenges and future directions vessel trajectory prediction AIS data",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to web_search",
+    "duration_ms": 1922,
+    "titles": [
+     "CHALLENGES Synonyms: 170 Similar and Opposite Words - Merriam-Webster",
+     "CHALLENGE | English meaning - Cambridge Dictionary",
+     "CHALLENGE Definition & Meaning - Merriam-Webster",
+     "Challenges - YouTube"
+    ]
+   },
+   "ts": 1790447491.5799558
+  },
+  {
+   "type": "step_end",
+   "message": "Step 5 recovered: 6 result(s) in 1922 ms",
+   "data": {
+    "step_id": 5,
+    "tool": "arxiv",
+    "query": "most recent research advancements vessel trajectory prediction AIS data",
+    "status": "recovered",
+    "attempts": 4,
+    "error": null,
+    "recovery": "fell back to web_search",
+    "duration_ms": 1922,
+    "titles": [
+     "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+     "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+     "My Account",
+     "Microsoft - Wikipedia"
+    ]
+   },
+   "ts": 1790447491.5800745
+  },
+  {
+   "type": "info",
+   "message": "Read full text of 1 top page(s) for extra depth",
+   "data": {},
+   "ts": 1790447491.8982785
+  },
+  {
+   "type": "info",
+   "message": "Synthesising report from 18 sources",
+   "data": {},
+   "ts": 1790447491.898291
+  },
+  {
+   "type": "report",
+   "message": "Report ready",
+   "data": {
+    "title": "Research brief: State of the art in vessel trajectory prediction from AIS data",
+    "summary": "Gathered 18 distinct, relevant sources from github, web_search. This summary was produced extractively (no LLM configured), so points are quoted from sources rather than synthesised.",
+    "key_points": [
+     {
+      "text": "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "Danialba/ais-vessel-trajectory-prediction",
+      "citations": [
+       2
+      ]
+     },
+     {
+      "text": "csefaisel/Vessel_Trajectory_Prediction",
+      "citations": [
+       3
+      ]
+     },
+     {
+      "text": "gotu0000/Apollo",
+      "citations": [
+       4
+      ]
+     },
+     {
+      "text": "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ...",
+      "citations": [
+       5
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "text": "★1 · Jupyter Notebook · AIS vessel trajectory prediction using a variety of AI algorithms.",
+      "citations": [
+       2
+      ]
+     },
+     {
+      "text": "★19 · Jupyter Notebook · Codebase for vessel trajectory prediction using historical AIS data",
+      "citations": [
+       4
+      ]
+     },
+     {
+      "text": "★9 · Jupyter Notebook · DBSCAN and VARMAX based trajectory and collision prediction of vessels using Automatic Identification System data.",
+      "citations": [
+       1
+      ]
+     },
+     {
+      "text": "★7 · Python · Unofficial Implementation of Paper: Deep Learning Methods for Vessel Trajectory Prediction based on Recurrent Neural Networks",
+      "citations": [
+       3
+      ]
+     },
+     {
+      "text": "★4 · Python · Official PyTorch implementation of SGlow, a conditional normalizing-flow model for multimodal AIS vessel trajectory prediction under navigational uncertainty (IEEE TII 2026).",
+      "citations": [
+       6
+      ]
+     },
+     {
+      "text": "My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service.",
+      "citations": [
+       5
+      ]
+     }
+    ],
+    "insights": [
+     "Read the top-ranked sources first:,,.",
+     "Cross-check claims that appear in only one source before acting on them.",
+     "Configure an LLM key for synthesised, non-extractive insights."
+    ],
+    "limitations": [
+     "Extractive mode: no cross-source reasoning was performed."
+    ],
+    "references": [
+     {
+      "title": "Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+      "url": "https://github.com/Aditya-Katkuri/Vessel-trajectory-prediction-using-AIS-data",
+      "snippet": "★9 · Jupyter Notebook · DBSCAN and VARMAX based trajectory and collision prediction of vessels using Automatic Identification System data. ",
+      "source": "github",
+      "published": "2024-11-17T07:12:18Z",
+      "score": 0.686,
+      "id": 1
+     },
+     {
+      "title": "Danialba/ais-vessel-trajectory-prediction",
+      "url": "https://github.com/Danialba/ais-vessel-trajectory-prediction",
+      "snippet": "★1 · Jupyter Notebook · AIS vessel trajectory prediction using a variety of AI algorithms.",
+      "source": "github",
+      "published": "2025-08-14T16:38:38Z",
+      "score": 0.686,
+      "id": 2
+     },
+     {
+      "title": "csefaisel/Vessel_Trajectory_Prediction",
+      "url": "https://github.com/csefaisel/Vessel_Trajectory_Prediction",
+      "snippet": "★7 · Python · Unofficial Implementation of Paper: Deep Learning Methods for Vessel Trajectory Prediction based on Recurrent Neural Networks",
+      "source": "github",
+      "published": "2025-02-11T03:34:50Z",
+      "score": 0.514,
+      "id": 3
+     },
+     {
+      "title": "gotu0000/Apollo",
+      "url": "https://github.com/gotu0000/Apollo",
+      "snippet": "★19 · Jupyter Notebook · Codebase for vessel trajectory prediction using historical AIS data",
+      "source": "github",
+      "published": "2021-11-18T06:52:43Z",
+      "score": 0.429,
+      "id": 4
+     },
+     {
+      "title": "My Ship Tracking Free Realtime AIS Vessel Tracking Vessels ...",
+      "url": "https://www.myshiptracking.com/",
+      "snippet": "My Ship Tracking is a FREE REALTIME AIS vessel finder tracking service. With this vessel tracker you can monitor ship positions, vessel tracking, ship tracking, vessel position, vessels traffic, port activity in realtime map.",
+      "source": "web_search",
+      "published": "Sat, 26 Sep 2026 17:32:00 GMT",
+      "score": 0.343,
+      "id": 5
+     },
+     {
+      "title": "KaysenWB/TII_SGlow",
+      "url": "https://github.com/KaysenWB/TII_SGlow",
+      "snippet": "★4 · Python · Official PyTorch implementation of SGlow, a conditional normalizing-flow model for multimodal AIS vessel trajectory prediction under navigational uncertainty (IEEE TII 2026).",
+      "source": "github",
+      "published": "2026-08-10T14:19:55Z",
+      "score": 0.343,
+      "id": 6
+     }
+    ]
+   },
+   "ts": 1790447533.4916935
+  },
+  {
+   "type": "done",
+   "message": "Done in 70.49s",
+   "data": {
+    "run_id": "fb2989e67f",
+    "stats": {
+     "raw": 36,
+     "url_dupes": 2,
+     "near_dupes": 0,
+     "irrelevant": 15,
+     "kept": 18,
+     "tool_calls": 12,
+     "steps": 6,
+     "recovered": 4,
+     "failed": 0,
+     "llm_calls": 2,
+     "llm_tokens": 2403,
+     "citation_warnings": 0,
+     "duration_s": 70.49,
+     "sources_used": [
+      "github",
+      "web_search"
+     ]
+    }
+   },
+   "ts": 1790447533.4917123
+  }
+ ]
+}
