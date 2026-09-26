@@ -12,10 +12,31 @@ from .base import Tool, ToolError, strip_html
 
 class WebSearch(Tool):
     name = "web_search"
-    description = "General web search (DuckDuckGo). Broad coverage of any topic."
+    description = "General web search (Bing, with DuckDuckGo as backup). Broad coverage of any topic."
     best_for = "general questions, companies, products, how-tos, anything not covered by a specialised source"
 
     async def search(self, query: str, limit: int = 6) -> list[Document]:
+        # Bing's RSS endpoint works from cloud hosts; DuckDuckGo often blocks datacenter IPs.
+        try:
+            docs = await self._bing(query)
+            if docs:
+                return docs[:limit]
+        except ToolError:
+            pass
+        return (await self._ddg(query))[:limit]
+
+    async def _bing(self, query: str) -> list[Document]:
+        r = await self._get("https://www.bing.com/search", q=query, format="rss", setlang="en-US", cc="US")
+        try:
+            root = ET.fromstring(r.content)
+        except ET.ParseError as e:
+            raise ToolError("web_search: invalid Bing RSS") from e
+        return [Document(title=i.findtext("title") or "", url=i.findtext("link") or "",
+                         snippet=strip_html(i.findtext("description") or ""), source=self.name,
+                         published=i.findtext("pubDate"))
+                for i in root.iter("item")]
+
+    async def _ddg(self, query: str) -> list[Document]:
         r = await self._get("https://html.duckduckgo.com/html/", q=query)
         blocks = re.findall(
             r'<a[^>]+class="result__a"[^>]+href="([^"]+)"[^>]*>(.*?)</a>.*?'
@@ -25,15 +46,14 @@ class WebSearch(Tool):
         )
         docs = []
         for href, title, snippet in blocks:
-            # DDG wraps links as //duckduckgo.com/l/?uddg=<real url>
-            if "uddg=" in href:
+            if "uddg=" in href:  # DDG wraps links as //duckduckgo.com/l/?uddg=<real url>
                 href = unquote(parse_qs(urlparse(href).query).get("uddg", [href])[0])
             if "duckduckgo.com/y.js" in href:  # ads
                 continue
             docs.append(Document(title=strip_html(title), url=href, snippet=strip_html(snippet), source=self.name))
         if not docs and "anomaly" in r.text.lower():
             raise ToolError("web_search: blocked by bot protection")
-        return docs[:limit]
+        return docs
 
 
 class NewsSearch(Tool):

@@ -36,7 +36,7 @@ class Settings:
     base_url: str = field(default_factory=lambda: os.getenv("LLM_BASE_URL", ""))
     api_key: str = field(default_factory=lambda: os.getenv("LLM_API_KEY", ""))
     offline: bool = field(default_factory=lambda: os.getenv("OFFLINE_MODE", "0") == "1")
-    tool_timeout: float = field(default_factory=lambda: float(os.getenv("TOOL_TIMEOUT", "12")))
+    tool_timeout: float = field(default_factory=lambda: float(os.getenv("TOOL_TIMEOUT", "8")))
     max_retries: int = field(default_factory=lambda: int(os.getenv("MAX_RETRIES", "2")))
     db_path: str = field(default_factory=lambda: os.getenv("MEMORY_DB", "data/memory.sqlite3"))
     reports_dir: str = field(default_factory=lambda: os.getenv("REPORTS_DIR", "data/reports"))

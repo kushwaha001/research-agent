@@ -39,6 +39,9 @@ class Executor:
                 return await self._call(tool, query), attempts, errors
             except ToolError as e:
                 errors.append(str(e))
+                # A source that timed out twice is down, not flaky: stop burning time on it.
+                if "timed out" in str(e) and sum("timed out" in x for x in errors) >= 2:
+                    break
                 if attempt < self.max_retries:
                     delay = 0.5 * (2**attempt)
                     await self.emit(TraceEvent(type="recovery", message=f"Step {step.id}: {e} → retrying in {delay:.1f}s",

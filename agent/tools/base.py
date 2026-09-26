@@ -14,7 +14,8 @@ import httpx
 
 from ..models import Document
 
-USER_AGENT = "Mozilla/5.0 (compatible; ResearchAgent/1.0; +https://github.com/kushwaha001)"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+ACCEPT = "text/html,application/xhtml+xml,application/xml;q=0.9,application/atom+xml;q=0.9,application/json;q=0.9,*/*;q=0.8"
 
 
 class ToolError(RuntimeError):
@@ -32,7 +33,7 @@ class Tool(abc.ABC):
     async def _get(self, url: str, **params) -> httpx.Response:
         try:
             async with httpx.AsyncClient(
-                timeout=self.timeout, headers={"User-Agent": USER_AGENT}, follow_redirects=True
+                timeout=self.timeout, headers={"User-Agent": USER_AGENT, "Accept": ACCEPT, "Accept-Language": "en-US,en;q=0.9"}, follow_redirects=True
             ) as c:
                 r = await c.get(url, params=params or None)
         except httpx.TimeoutException as e:
