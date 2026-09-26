@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import re
 from typing import Any
 
@@ -53,7 +54,9 @@ class LLMClient:
         body: dict[str, Any] = {
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
-            "generationConfig": {"temperature": temperature, **({"responseMimeType": "application/json"} if json_mode else {})},
+            "generationConfig": {"temperature": temperature, **({"responseMimeType": "application/json"} if json_mode else {}),
+                                 # Structured extraction doesn't need long hidden reasoning; this cuts latency ~3-5x.
+                                 **({"thinkingConfig": {"thinkingBudget": int(os.getenv("GEMINI_THINKING_BUDGET", "0"))}} if "flash" in self.s.model else {})},
         }
         m = self.s.model
         urls = [f"{self.s.base_url}/models/{m}:generateContent",
