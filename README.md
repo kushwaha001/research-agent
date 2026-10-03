@@ -42,16 +42,6 @@ python -m pytest -q                    # 15 offline tests
 
 **No key?** The agent still runs. It uses a rule-based planner and extractive summaries over live sources. `OFFLINE_MODE=1` also swaps the tools for deterministic simulated ones, which the tests use.
 
-## Deploy
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kushwaha001/research-agent)
-
-- **Render:** push to GitHub → New → Blueprint → select the repo (`render.yaml` is included) → paste your `GEMINI_API_KEY` when prompted. Render builds the Dockerfile and gives you a public `*.onrender.com` URL.
-- **Hugging Face Spaces:** create a Docker Space, push this repo, and add `GROQ_API_KEY` as a secret. The app listens on port 7860.
-- **Any Docker host:** `docker build -t research-agent . && docker run -p 7860:7860 -e GROQ_API_KEY=... research-agent`
-
-Memory is SQLite in `data/`. On free hosts with ephemeral disks it resets whenever the service redeploys.
-
 ## Project layout
 
 ```
